@@ -33,7 +33,7 @@ if __name__ == "__main__":
     if (len(sys.argv) > 3):
         nlp = spacy.load(sys.argv[3])
     else:
-        nlp = spacy.load("nl_core_news_sm")
+        nlp = spacy.load("nl_core_news_lg")
     
     if (os.path.isdir(input_file)):
         spacy_label_folder(input_file, output_file)
