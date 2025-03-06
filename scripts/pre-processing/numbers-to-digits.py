@@ -1,7 +1,6 @@
 import os
 import sys
 
-# Dictionary for base numbers
 numwords = {
     "nul": 0,
     "een": 1,
@@ -34,9 +33,7 @@ numwords = {
 }
 
 def parse_tens(s: str) -> int:
-    """
-    Parses a number below 100 (possibly including numbers like "eenentwintig").
-    """
+    
     if s == "":
         return 0
     if s in numwords:
@@ -48,13 +45,9 @@ def parse_tens(s: str) -> int:
             tens_part = s[len(prefix):]
             if tens_part in numwords and numwords[tens_part] >= 20:
                 return numwords[unit] + numwords[tens_part]
-    raise ValueError(f"Unknown tens value: {s}")
 
 def parse_hundred(s: str) -> int:
-    """
-    Parses a number below 1000.
-    Looks for the presence of "honderd" and splits the string accordingly.
-    """
+    
     if s == "":
         return 0
     idx = s.find("honderd")
@@ -72,12 +65,10 @@ def parse_hundred(s: str) -> int:
         return parse_tens(s)
 
 def parse_number(text: str) -> int:
-    """
-    Parses a fully spelled out Dutch number (as text) into its integer value.
-    Handles numbers under one million.
-    """
     # Preprocessing: lowercase and remove spaces and hyphens
     s = text.lower().replace(" ", "").replace("-", "")
+    if s == "een":
+        return "een"
     if s == "":
         raise ValueError("Input string is empty")
     if s == "nul":
@@ -96,8 +87,6 @@ def parse_number(text: str) -> int:
         number = thousands * 1000 + remainder
     else:
         number = parse_hundred(s)
-    if number >= 1000000:
-        raise ValueError("Number is one million or greater; only numbers under one million are supported.")
     return number
 
 def numbers_to_digits(input_file, output_file):
@@ -109,12 +98,13 @@ def numbers_to_digits(input_file, output_file):
     for i, sentence in enumerate(sentences):
         words = sentence.split(" ")
         for j, word in enumerate(words):
-            try:
+            try:            
                 number = parse_number(word)
-                words[j] = str(number)
+                if number:
+                    words[j] = str(number)
             except ValueError:
                 pass
-        sentences[i] = " ".join(words)
+        sentences[i] = " ".join(fix_year_numbers(words))
     
     with open(output_file, 'w', encoding='utf8') as f:
         f.write("\n".join(sentences))
@@ -125,6 +115,17 @@ def folder_numbers_to_digits(input_folder, output_folder):
         input_path = os.path.join(input_folder, filename)
         output_path = os.path.join(output_folder, filename)
         numbers_to_digits(input_path, output_path)
+        
+def fix_year_numbers(words):
+    for i, word in enumerate(words):
+        if word == "2000" or word == "1900":
+            if i < len(words) - 1:
+                next_word = words[i+1]
+                if next_word.isnumeric():
+                    words[i] = str(int(word) + int(next_word))
+                    words.pop(i+1)
+    return words
+        
 
 # Example usage:
 if __name__ == "__main__":
