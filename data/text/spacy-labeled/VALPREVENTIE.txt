@@ -1,4 +1,4 @@
-Het is denk ik gewoon heel belangrijk dat [uh] als mensen langer thuis willen blijven wonen dat ze dat veilig kunnen doen. En [uh] als je ouder wordt dan gaat je spierkracht ach*a (PERSON) achteruit je gaat meer medicijnen gebruiken. Dus de kans op vallen wordt steeds groter. En en ja dan moet je samen wat aan doen met andere zorgverleners die [uh] op andere punten [uh] expertise hebben. U vertelde dat u 2 (CARDINAL) keer was gevallen deze week (DATE).
+Het is denk ik gewoon heel belangrijk dat [uh] als mensen langer thuis willen blijven wonen dat ze dat veilig kunnen doen. En [uh] als je ouder wordt dan gaat je spierkracht ach*a (ORG) achteruit je gaat meer medicijnen gebruiken. Dus de kans op vallen wordt steeds groter. En en ja dan moet je samen wat aan doen met andere zorgverleners die [uh] op andere punten [uh] expertise hebben. U vertelde dat u 2 (CARDINAL) keer was gevallen deze week.
 Ja. Dat klopt. Toen ik bijvoorbeeld de achterklep van de auto wilde dichtdoen en die net ietsje te hoog voor me was waardoor ik ook m'n evenwicht verloor en achterover viel op straat. HÃ¨ op de parkeerplaats. En dat was ook akelig want die auto's die kwamen
 daar natuurlijk allemaal uit. En gelukkig zag een meneer mij liggen. Dus die sprong uit de auto en rende naar me toe om me overeind te krijgen.
 Ja.
@@ -6,31 +6,31 @@ Vuilniszakken wegbrengen. En met zak en al omvallen.
 Jeetje. En doet u ook aan [uh] aan sporten bij de fysio?
 Ik doe niet aan sport. Ik doe m'n eigen oefeningen.
 Ja.
-Necrotiserende myositis (PERSON). En [uh] ik doe mee met de ochtendgymnastiek op
+Necrotiserende (LOC) myositis. En [uh] ik doe mee met de ochtendgymnastiek op
 televisie. Dat doe ik wel.
 Ja. Met [uh] Nederland (GPE) beweegt?
 Nederland (GPE) beweegt.
-Okee. En merkt u dat het met de spieren goed gaat of gaat dat achteruit?
+Okee (FAC). En merkt u dat het met de spieren goed gaat of gaat dat achteruit?
 Nee dat gaat achteruit.
-Oke.
+Oke (ORG).
 Ja.
-Oke.
+Oke (ORG).
 En daar is dus ook een klein probleem.
 Ja.
 Dat de cholesterolverlagers daar ook mee kunnen helpen.
 Ja.
 Dat 't achteruitgaat.
 En hoe gaat het met eten?
-[uh] Ik probeer 1200 (CARDINAL) calorieÃ (WORK_OF_ART)«n ofzo (WORK_OF_ART).
+[uh] Ik probeer 1200 (CARDINAL) calorieÃ«n ofzo (WORK_OF_ART).
 Waarom doet u dat?
 Omdat ik [uh] omdat ik moet afvallen.
 Van wie?
 Van mijzelf om te proberen van de van de medicijnen af te komen.
-Okee okee (WORK_OF_ART).
+Okee (FAC) okee.
 Dus en ik ben natuurlijk ook aan 't krimpen door de ouderdom.
 Ja.
 Dus ik wil alles doen om te proberen
-[uh] dat goed op de rit te houden. En het werkt ook wel. En met metformine (PERSON) val ik ook af want er is ook diabetes door de pr*a prednison van een tijd geleden. Dat is nooit meer helemaal goed gekomen. [uh] Enfin dus d'r is een hele reeks van kwalen die dus dus zorgen dat je ook kan aankomen in plaats van afvallen.
+[uh] dat goed op de rit te houden. En het werkt ook wel. En met metformine val ik ook af want er is ook diabetes door de pr*a prednison van een tijd geleden. Dat is nooit meer helemaal goed gekomen. [uh] Enfin (GPE) dus d'r is een hele reeks van kwalen die dus dus zorgen dat je ook kan aankomen in plaats van afvallen.
 Het is eigenlijk is het makkelijk te organiseren om om valpreventie te te gaan doen. Je moet 't met samen met een paar mensen doen onder andere die zich specialiseren in bewegen zoals de fysio en mensen die zich verdiepen in kwetsbare ouders dus de POH ouderenzorg bij de
 huisarts en dan langzaam kun je je netwerk uitbreiden als je meer expertise nodig hebt. Maar daar ja als je klein begint heb je gewoon een paar mensen nodig zou ik daar beginnen. [uh] U bent gewoon gevallen. U bent ook wel eens duizelig.
 Ja.
@@ -56,12 +56,12 @@ Dus dat is [uh] dat is wel heftig.
 Ja. Heeft u wel eens wat ge*a gebroken?
 Nooit.
 Nooit. Mooi. Gebruikt u zelf ook nog medicatie anders dan wat u van ons krijgt?
-Vitamine D.
-Ja (PERSON).
-Omdat wij allebei vitamine D tekort hadden. En [uh] nou dat is het nu.
+Vitamine D. (WORK_OF_ART)
+Ja.
+Omdat wij allebei vitamine D (PERSON) tekort hadden. En [uh] nou dat is het nu.
 En tegen de pijn?
 Nee.
-Okee. Ik ik ga dit [uh] straks even bij Liesbeth (PERSON) inleveren.
+Okee (FAC). Ik ik ga dit [uh] straks even bij Liesbeth (PERSON) inleveren.
 Is goed.
 Dan gaat zij denk ik contact met u opnemen om nog wat vragen door te nemen.
 Ja.
@@ -74,5 +74,5 @@ En dan misschien is 't ook leuk om weer gewoon [uh] samen met dokter Mus (PERSON
 Ja.
 Dat we er toch weer opnieuw naar kijken.
 Want ik wil echt goed huiswerk maken want ik ben toch weer een paar dingen tegengekomen waarvan ik dacht oh daar moet ik echt even over vragen.
-Okee. [uh] Ik heb net mevrouw Cameron (PERSON) gesproken en [uh] wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. [uh] Kan een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. En het is heel belangrijk dat
+Okee (FAC). [uh] Ik heb net mevrouw Cameron (PERSON) gesproken en [uh] wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. [uh] Kan een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. En het is heel belangrijk dat
 daar thuis wordt gekeken of d'r redenen zijn waarom ze kan vallen dus [uh] ik denk dat er meerdere mensen aan de slag moeten om het probleem van [uh] mevrouw Cameron (PERSON) [uh] op te lossen.
