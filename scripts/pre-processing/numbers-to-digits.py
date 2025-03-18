@@ -1,5 +1,6 @@
 import os
 import sys
+import string
 
 numwords = {
     "nul": 0,
@@ -98,10 +99,15 @@ def numbers_to_digits(input_file, output_file):
     for i, sentence in enumerate(sentences):
         words = sentence.split(" ")
         for j, word in enumerate(words):
+            # Remove punctuation from beginning and end of the token
+            clean_word = word.strip(string.punctuation)
+            # Save any trailing punctuation
+            prefix = word[:len(word) - len(word.lstrip(string.punctuation))]
+            suffix = word[len(clean_word) + len(prefix):]
             try:            
-                number = parse_number(word)
+                number = parse_number(clean_word)
                 if number:
-                    words[j] = str(number)
+                    words[j] = f"{prefix}{number}{suffix}"
             except ValueError:
                 pass
         sentences[i] = " ".join(fix_year_numbers(words))
@@ -118,11 +124,15 @@ def folder_numbers_to_digits(input_folder, output_folder):
         
 def fix_year_numbers(words):
     for i, word in enumerate(words):
-        if word == "2000" or word == "1900":
+        clean_word = word.strip(string.punctuation)
+        if clean_word == "2000" or clean_word == "1900":
             if i < len(words) - 1:
                 next_word = words[i+1]
-                if next_word.isnumeric():
-                    words[i] = str(int(word) + int(next_word))
+                clean_next_word = next_word.strip(string.punctuation)
+                prefix_next = next_word[:len(next_word) - len(next_word.lstrip(string.punctuation))]
+                suffix_next = next_word[len(clean_next_word) + len(prefix_next):]
+                if clean_next_word.isnumeric():
+                    words[i] = str(int(clean_word) + int(clean_next_word)) + suffix_next
                     words.pop(i+1)
     return words
         

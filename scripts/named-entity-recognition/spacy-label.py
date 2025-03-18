@@ -7,6 +7,7 @@ import sys
 import os
 
 nlp = None
+anonymize = False
 
 def spacy_label(input_file, output_file, anonymize=False):
     with open(input_file, 'r') as f:

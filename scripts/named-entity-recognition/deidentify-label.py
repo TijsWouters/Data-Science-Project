@@ -26,6 +26,8 @@ def spacy_label(input_file, output_file, anonymize=False):
         
         annotations = tagger.annotate(docs)
         
+        print(annotations[0].annotations)
+        
         if anonymize:
             text = mask_annotations(annotations[0]).text
         else:
