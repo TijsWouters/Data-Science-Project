@@ -15,7 +15,7 @@ def remove_time_annotations(text):
     return '\n'.join(new_lines) 
 
 def remove_brackets(text):
-    return re.sub(r'\s\[[^\]]*\]', '', text)
+    return re.sub(r'\[[^\]]*\][ \t]*', '', text)
 
 def remove_asterix(text):
     return re.sub(r'\*[^\s]*', '', text)
