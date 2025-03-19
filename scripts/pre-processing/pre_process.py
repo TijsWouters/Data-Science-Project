@@ -18,7 +18,7 @@ def remove_brackets(text):
     return re.sub(r'\s\[[^\]]*\]', '', text)
 
 def remove_asterix(text):
-    return re.sub(r'\*', '', text)
+    return re.sub(r'\*[^\s]*', '', text)
 
 
 

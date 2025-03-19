@@ -109,7 +109,14 @@ def numbers_to_digits(text):
     
     return "\n".join(sentences)
         
-def fix_year_numbers(words):
+def fix_year_numbers(words):   
+    for i, word in enumerate(words):
+        clean_word = word.strip(string.punctuation)
+        next_clean_word = words[i+1].strip(string.punctuation) if i < len(words) - 1 else None
+        if clean_word == '2' and next_clean_word == '1000':
+            words[i] = '2000'
+            words.pop(i+1)
+     
     for i, word in enumerate(words):
         clean_word = word.strip(string.punctuation)
         if clean_word == "2000" or clean_word == "1900":
