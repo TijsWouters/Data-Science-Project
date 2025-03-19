@@ -1,5 +1,3 @@
-import os
-import sys
 import string
 
 numwords = {
@@ -90,10 +88,7 @@ def parse_number(text: str) -> int:
         number = parse_hundred(s)
     return number
 
-def numbers_to_digits(input_file, output_file):
-    with open(input_file, 'r', encoding='utf8') as f:
-        text = f.read()
-        
+def numbers_to_digits(text):        
     # Change numbers to digit for each sentence
     sentences = text.split("\n")
     for i, sentence in enumerate(sentences):
@@ -112,15 +107,7 @@ def numbers_to_digits(input_file, output_file):
                 pass
         sentences[i] = " ".join(fix_year_numbers(words))
     
-    with open(output_file, 'w', encoding='utf8') as f:
-        f.write("\n".join(sentences))
-        
-def folder_numbers_to_digits(input_folder, output_folder):
-    os.makedirs(output_folder, exist_ok=True)
-    for filename in os.listdir(input_folder):
-        input_path = os.path.join(input_folder, filename)
-        output_path = os.path.join(output_folder, filename)
-        numbers_to_digits(input_path, output_path)
+    return "\n".join(sentences)
         
 def fix_year_numbers(words):
     for i, word in enumerate(words):
@@ -135,14 +122,3 @@ def fix_year_numbers(words):
                     words[i] = str(int(clean_word) + int(clean_next_word)) + suffix_next
                     words.pop(i+1)
     return words
-        
-
-# Example usage:
-if __name__ == "__main__":
-    input_file, output_file = sys.argv[1], sys.argv[2]
-    if (os.path.isdir(input_file)):
-        folder_numbers_to_digits(input_file, output_file)
-    else:
-        numbers_to_digits(input_file, output_file)
-    
-    print(f"Numbers changed to digits in {input_file} and saved to {output_file}")
