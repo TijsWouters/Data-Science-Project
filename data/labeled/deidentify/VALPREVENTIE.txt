@@ -61,7 +61,7 @@ Ja.
 Omdat wij allebei vitamine D tekort hadden. En nou dat is het nu.
 En tegen de pijn?
 Nee.
-Okee. Ik ik ga dit straks even bij Liesbeth (NAME) inleveren.
+Okee. Ik ik ga dit straks even bij <Liesbeth>{NAME} inleveren.
 Is goed.
 Dan gaat zij denk ik contact met u opnemen om nog wat vragen door te nemen.
 Ja.
@@ -70,9 +70,9 @@ opvragen.
 Ja?
 Bloeddruk enzo. En dan gaan we nog een keer alle medicatie goed doornemen.
 Ja.
-En dan misschien is 't ook leuk om weer gewoon samen met dokter Mus (NAME) een afspraak te maken.
+En dan misschien is 't ook leuk om weer gewoon samen met dokter <Mus>{NAME} een afspraak te maken.
 Ja.
 Dat we er toch weer opnieuw naar kijken.
 Want ik wil echt goed huiswerk maken want ik ben toch weer een paar dingen tegengekomen waarvan ik dacht oh daar moet ik echt even over vragen.
-Okee. Ik heb net mevrouw Cameron (NAME) gesproken en wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. Kan een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. En het is heel belangrijk dat
-daar thuis wordt gekeken of d'r redenen zijn waarom ze kan vallen dus ik denk dat er meerdere mensen aan de slag moeten om het probleem van mevrouw Cameron (NAME) op te lossen.
+Okee. Ik heb net mevrouw <Cameron>{NAME} gesproken en wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. Kan een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. En het is heel belangrijk dat
+daar thuis wordt gekeken of d'r redenen zijn waarom ze kan vallen dus ik denk dat er meerdere mensen aan de slag moeten om het probleem van mevrouw <Cameron>{NAME} op te lossen.

@@ -71,7 +71,11 @@ class Document:
     def label(self):
         labeled_text = self.text
         for annotation in sorted(self.annotations, key=lambda a: a.start, reverse=True):
-            labeled_text = labeled_text[:annotation.end] + f" ({annotation.tag})" + labeled_text[annotation.end:]
+            # label 'Bert' as '<Bert>{NAME}'
+            label = f"<{annotation.text}>{{{annotation.tag}}}"
+            text_list = list(labeled_text)
+            text_list[annotation.start:annotation.end] = list(label)
+            labeled_text = "".join(text_list)
         return labeled_text
 
 def process_file(input_file, output_file, method, target):

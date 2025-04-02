@@ -12,7 +12,7 @@ Ja ik kan vertellen hoe de reuma is begonnen. Dat is ja op m'n twaalfde is dat g
 Mijn ervaringen met 't voorschrijven van TNF-alfaremmers zijn heel positief. Het belangrijkste punt daarin is dat ze goed werken. Dat wil zeggen dat mensen zelf minder pijn ervaren en dat wij als dokter ook minder ontstekingen
 aan de gewrichten zien. Het voordeel van het gebruik van biologicals ten opzichte van de conventionele middelen is dat ze voor een groep patiënten die niet reageert op conventionele middelen dus beter werken. Daarnaast is het zo dat patiënten ook aangeven dat ze vaak sneller werken. Dus dat mensen sneller van hun klachten af zijn.
 De reumamiddelen die ik nu krijg dat is dus rituximab een keer een halfjaar en tweemaal daags 100 milligram celebrix.
-En nou gebruikt u die rituximab al een aantal jaren hè. Sinds 2006 (DATE). Daarvoor heeft u ook een
+En nou gebruikt u die rituximab al een aantal jaren hè. Sinds <2006>{DATE}. Daarvoor heeft u ook een
 hele hoop medicijnen gebruikt waaronder ook de anti TNF-middelen. U bent begonnen met infliximab via het infuus hè?
 Ja.
 Ja.
@@ -37,7 +37,7 @@ Daarnaast zijn deze middelen heel duur dus voor de gezondheidszorg is dat natuur
 Sinds mijn twintigste ongeveer of begin 20 ben ik dan met de salozopyrine doorgegaan. En dat was dan ook tegen de reuma . Toen ik besloot om ja rond m'n dertigste iets iets later wilde ik graag vader worden en toen ben ik gestopt met de salozopyrine en toen ik vader werd ben ik ook niet meer gestart daarmee. Dus eigenlijk heb ik 't de laatste 13 jaar denk ik ongeveer alleen op paracetamol en ibuprofen uitgezongen.
 Soms is er angst bij patiënten. Ook omdat er natuurlijk zeldzame toch ernstige bijwerkingen kunnen zijn bij de anti TNF-middelen zoals MS-achtige aandoeningen zoals ook bijvoorbeeld heel simpel psoriasis kan ontstaan of kan opvlammen juist door de anti TNF. Het risico op maligniteiten dat is natuurlijk een angstig iets voor mensen dat ze reuma hebben en als ze een medicijn gaan gebruiken misschien wel kanker daarvan krijgen. Over het algemeen proberen we mensen goed voor te lichten en het risico op deze zeldzame dingen in kaart te brengen dat dat een heel
 klein risico is en dat het hebben van een actieve reumatoïde artritis ook een risicofactor is op hart en vaatziekten verminderde levensduur et cetera. En is het al een beetje kiezen tussen 2 kwaden.
-In 2008 (DATE) kwam ik bij dokter Dekstra (NAME) en die begon over op gegeven moment over biologicals en dat ik daar wellecht wellicht voor in aanmerking zou komen. Ja na wat informatie te hebben gekregen ingewonnen durfde ik het eigenlijk niet aan. Omdat ja ik het ging eigenlijk best goed vond ik relatief gezien met mij. En ja toch de angst voor de bijwerkingen
+In <2008>{DATE} kwam ik bij dokter <Dekstra>{NAME} en die begon over op gegeven moment over biologicals en dat ik daar wellecht wellicht voor in aanmerking zou komen. Ja na wat informatie te hebben gekregen ingewonnen durfde ik het eigenlijk niet aan. Omdat ja ik het ging eigenlijk best goed vond ik relatief gezien met mij. En ja toch de angst voor de bijwerkingen
 mensen mobieler. Dus het aantal rolstoelen in onze wachtkamer is drastisch gedaald door het gebruik van anti TNF in combinatie met methotrexaat. Maar eigenlijk zijn wij gewend om om ook de biologicals hè dus die nieuwere middelen vaak te combineren met methotrexaat. Bij u is dat niet gebeurd. Hè en maar u heeft al methotrexaat gebruikt in het verleden.
 Ja. Jaren lang.
 Ja. En daar bent u ook mee gestopt vanwege de bijwerkingen hè? Kan u daar iets over zeggen waar waar had u last van?
@@ -63,7 +63,7 @@ Nee ja.
 Ja. Ja. Bent u misselijk d'r van?
 Nee.
 Ja.
-De medicatie die ik gebruik dat is mira (NAME) en dat dat injecteer ik eens in de 2 weken in m'n buik.
+De medicatie die ik gebruik dat is <mira>{NAME} en dat dat injecteer ik eens in de 2 weken in m'n buik.
 Mijn kwaliteit van leven is ja is toch behoorlijk behoorlijk verbeterd ondanks dat ik dacht dat ik ja dat ik dat mijn kwaliteit eigenlijk al tamelijk goed was. Waardoor ik vond dat ik er niet aan hoefde te beginnen. Ja heeft het me toch ontzettend verrast wat het teweeg heeft gebracht. Ik ja ik heb anders werd ik 's nachts vaak wakker van de pijn in m'n rug m'n nek en als ik terugdenk van toen ik startte en de maanden daarna dan ja ik sliep beter. Ja waardoor ik me gewoon fitter voelde. Begon daardoor ook meer
 te bewegen. Bewegen ging makkelijker. Ja en doordat je makkelijker gaat ga je graag bewegen dus ja ik ging weer heel veel sporten. Voetballen en fitness fietsen tennis. En was echt super.
 Wat er verbeterd zou kunnen worden in de behandeling van reuma in de eerste en tweede lijn met respect tot biologicals is het belangrijkste denk dat de biologicals nu door de ziekenhuisapotheek worden afgegeven en dus de eigen huisapotheek vaak niet op de hoogte is dat de patient ook een biological gebruikt. Dat levert natuurlijk bij alle partijen verwarring op. De huisarts krijgt van
