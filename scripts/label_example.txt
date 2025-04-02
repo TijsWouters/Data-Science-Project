@@ -1,0 +1,6 @@
+Dit is een voorbeeldtekst om het script te testen.
+Mijn naam is <Bert>{PERSON} en ik werk als <softwareontwikkelaar>{JOB} bij <Tech Solutions>{ORG}.
+Ik ben geboren op <14 juni 2004>{DATE} en woon in <Amsterdam>{LOCATION}.
+Vandaag ontmoette ik <Alice>{PERSON} tijdens een <conference>{EVENT} in de stad.
+Laten we zien of het script alle labels correct verwerkt!
+Groetjes, ChatGPT
