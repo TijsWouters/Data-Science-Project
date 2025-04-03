@@ -8,6 +8,15 @@ class Annotation:
         self.tag = tag
         self.start = start
         self.end = end
+        
+    def __eq__(self, value):
+        return isinstance(value, Annotation) and self.text == value.text and self.tag == value.tag and self.start == value.start and self.end == value.end
+
+    def __gt__(self, value):
+        return isinstance(value, Annotation) and self.start <= value.start and self.end >= value.end
+    
+    def __lt__(self, value):
+        return isinstance(value, Annotation) and self.start >= value.start and self.end <= value.end
 
     @staticmethod
     def fromSpacy(annotation):
