@@ -1,0 +1,71 @@
+(LOCATION) goed ik heb ja goed ik heb psoriasis ja. (LOCATION) vanaf m'n derde jaar af. (LOCATION) in principe uiteindelijk weet ik niet beter. (LOCATION) veel voor in het ziekenhuis gelegen. (LOCATION) gesmeerd en alles.
+(LOCATION). (LOCATION) u het goed als ik kom zalven?
+(LOCATION).
+(LOCATION)? (PERSON) zet ik dit even op het bed. (LOCATION) pakken we de zalfkaart erbij.'s A(PERSON)is het tijd voor de teerzalf dus de fix.
+J(LOCATION)
+B(LOCATION)patiënt Van 3 is gekozen voor teerbehandeling. D(PERSON)was mede op verzoek van de patiënt omdat ie daar in het verleden hele goeie ervaringen mee had. Nou teerbehandeling in de huissituatie is ontzettend lastig. D(LOCATION)is heel arbeidsintensief . D(LOCATION)is ook de reden dat er gekozen is voor een klinische behandeling. B(LOCATION)een klinische behandeling ja kan je de patiënt natuurlijk wat meer helpen. E(LOCATION)de patiënt
+wordt ook ingepakt. D(LOCATION)is thuis ook wat lastig. D(LOCATION)is er ook gekozen voor een op de de concentratie van de dithranol op te voeren en dat is ook thuis heel moeilijk want dan moet je op geleide van wat je ziet op de huid ja de concentratie opvoeren. D(LOCATION)patiënt die had in 't verleden bijwerkingen gehad op de klassieke immunosuppressiva. D(LOCATION)volgende stap zou dan zijn een biologic een T(ORGANIZATION)alfaremmer inzetten en eigenlijk de patiënt zelf gaf aan dat die liever eerst dit traject nog wilde doen voordat die eventueel zou starten met met een T(ORGANIZATION)alfaremmer.
+M(LOCATION)gelijk al hè als ik dus
+in 't ziekenhuis kom en ze beginnen met mij net als ik dan 's morgens kom en ze beginnen bij mij gelijk in de loop van de middag te smeren dan heb ik 's avonds voel ik al dat er dan voel je de jeuk zo wegtrekken. E(LOCATION)dat is wel heel heel heel erg prettig. J(LOCATION)ik kwam helemaal schoon thuis. Je ziet de wereld weer voor rozengeur en manenschijn aan laat maar zeggen. J(LOCATION)hebt nergens geen last van geen jeuk niks van alles. E(LOCATION)dat is dus heel prettig. D(LOCATION)die en dat als je dat al kwijt bent dan voel je je eigen al een heel ander mens. M(LOCATION)zeggen altijd pijn is erg maar jeuk is ook erg. Nou en ik heb het allebei gehad maar dan heb ik liever een beetje een beetje pijn als als jeuk. E(LOCATION)is weggetrokken is weer allemaal goed maar ik het dus aan m'n benen en aan m'n armen en dan op je rug dan heb je geen handjes van je ken daar niet bij komen. H(LOCATION)gaat ook hier zitten hè je wordt je gaat kortaf reageren.
+E(LOCATION)daar mot je voor uitkijken. O(LOCATION)of dan zat je 's avonds en dan had je 's winters gehad en dan werd het warm in die kamer. N(LOCATION)dan begon je jeuk xxx. E(LOCATION)dan kwam met die broek zo. E(LOCATION)dan denk ik daar ligt weer wat. E(LOCATION)dan xxx weet je wat. S(LOCATION)hem maar even onder de bank en dan ja dus ja. M(LOCATION)toen heb ik ook gezegd van nou dat doe ik niet meer. Thuis ging ik er wel anders mee om als dat ik dus. M(LOCATION)ik zou ik ging ook niet meer toendertijd voetbalde ik nog. M(LOCATION)als het dan als het te veel was dan zei ik nee joh ik kan een zondag niet. Ik ging allemaal dingen zoeken die eigenlijk niet waar waren maar om maar thuis te zijn. J(LOCATION)ik schaamde me eigen ja. G(LOCATION)en dan kwam ik dan wel in het ziekenhuis en dan kwam ik weer bij de dokter. H(PERSON)zegt daar hoef jij je niet voor te schamen. Ik zeg nee maar ja goed dat zit in me. E(LOCATION)dat was d'r moeilijk uit te krijgen.
+J(LOCATION)psoriasis en eczeem zijn allebei chronische inflammatoire aandoeningen. een heleboel dingen ja zijn eigenlijk hetzelfde ten aanzien
+van de behandeling. J(LOCATION)het betreft een enorme grote groep patiënten die gebruik maken van lokale therapie. We hebben zo'n één komma 2 miljoen chronische huidpatienten in N(LOCATION)die chronisch inflammatoire aandoeningen hebben. D(PERSON)heeft zo'n ja 600000 tot 800000 patiënten eczeem. E(LOCATION)binnen die groep van eczeem zien wij dan met name de constitutionele eczeem patiënten die het eigenlijk al vanaf hun vroege jeugd hebben. D(LOCATION)heb je ook de groep met handeczeem. D(LOCATION)is ook een hele belangrijke groep en die heeft ook erg behoefte aan goeie instructie hoe ze moeten smeren.
+B(LOCATION)jeuk en jeuk zit heel veel verschil in.
+J(LOCATION) Is het heel lichaam jeuk of is het ook plaatselijk?
+N(LOCATION)soms gewoon overal. Over m'n hele lichaam. M(LOCATION)die jeuk is heel anders als zeg maar iemand die zich een keer krabt dat is dat is gewoon 'n 'n oppervlakkig maar bij ons zit het zo diep.
+J(LOCATION)
+I(LOCATION)kan echt krabben totdat ik het bot bijna zie.
+J(LOCATION)
+E(LOCATION)dan doet het zeer.
+J(LOCATION)
+E(LOCATION)dat is krabben. Z(LOCATION)maar.
+J(LOCATION)
+H(LOCATION)is niet meer krabben zoals je iemand een keer zo ofzo keer op z'n kop krabt zeggen we dan wel eens maar het is heel anders krabben als een gemiddeld mens krabt.
+J(LOCATION)
+H(LOCATION)is gewoon echt.
+J(LOCATION) J(LOCATION)
+Zo hard mogelijk.
+dat zit zo diep.
+J(LOCATION)
+J(LOCATION)bij patiënt T(PERSON)hebben we echt te maken met een ernstige vorm van constitutioneel eczeem. D(LOCATION)patiënt lijdt d'r z'n hele leven al aan. Is nu langdurig behandeld met het zwaarste lokale middel wat we hebben. D(LOCATION)dermovate. H(PERSON)gebruikt ongeveer 50 gram per week en dat is voor de lange duur best veel. D(LOCATION)is echt een patiënt die in aanmerking kan komen voor systemische behandeling ook vanwege zijn extreme jeuk klachten wat natuurlijk een enorme impact heeft op je kwaliteit van leven. D(LOCATION)is dus een patiënt waarbij we
+dan ook kiezen voor behandeling met ciclosporine. D(LOCATION)is op 't moment 't enigste geregistreerde middel voor eczeem en dan zien we vaak heel snel een daling van de jeuk klachten en ook een daling van het de noodzaak tot de lokale steroïde. H(PERSON)heeft natuurlijk weer als nadeel dat je met name de bloeddruk en de nierfunctie in de gaten moet houden dus ook dit is ook niet een oplossing voor de de lange termijn en de oplossing zou je dan meer moeten zoeken in de toekomst voor de biologics. E(LOCATION)deze patiënt zouden in principe wel voor in aanmerking
+komen denk ik.
+J(LOCATION)de arts heeft het net uitgebreid met jullie besproken. En we gaan beginnen met neoral. J(LOCATION)dat is eigenlijk een andere therapie dan de zelf therapie maar die hoort er op het begin nog wel bij. E(LOCATION)die ga ik wel even uitgebreid met jullie bespreken. D(LOCATION)hebben we wat handigheidjes voor. Bent u bekend met de fingertip unit hee heeft u daar ooit van gehoord?
+N(LOCATION)
+N(LOCATION) I(LOCATION)hoor best wel vaak hier dat mensen te dun smeren. Nou we willen niet dat mensen te dun smeren want dan werkt de zalf eigenlijk niet. J(LOCATION)hebt een bepaalde hoeveelheid nodig zodat de zalf ja werkzaam kan zijn. Als u dit nou ziet hè?
+J(LOCATION)
+Z(LOCATION)u dan willen voordoen hoeveel je denkt dat de
+fingertip is. M(LOCATION)u zelf doen. D(LOCATION)is geen test. K(LOCATION)misschien een beetje kinderachtig maar.
+I(LOCATION)denk dat dit ongeveer ja ik druk hem er niet zo mooi uit maar gemiddeld.
+N(LOCATION)u heeft het wel in ieder geval goed door. J(LOCATION)maar u kunt deze opsmeren en.
+J(LOCATION)
+Op een klein plekje even.
+Oh.
+D(PERSON)voelt u wel of het smeert.
+xxx
+Probeer maar eens met die haren mee te smeren dus zo. J(LOCATION)
+W(LOCATION)besteden heel veel aandacht aan 't leren smeren op de poli omdat patiënten vaak volstrekt niet weten hoe ze moeten smeren. Z(LOCATION)krijgen dus wel het recept mee maar ze horen niet hoe dik ze moeten smeren hoe vaak ze moeten smeren en ook hoelang ze door moeten gaan en moeten ze continu blijven
+smeren moeten ze afbouwen. D(LOCATION)informatie die wordt vaak niet gegeven. We hebben daarvoor de de fingertip unit. W(LOCATION)d'r ieder lichaam lichaamsdeel eigenlijk verdeeld wordt in een aantal fingertips zalf wat je gebruikt. D(LOCATION)is heel belangrijk dat 't opgevolgd wordt zowel voor de werking als voor de bijwerking. D(LOCATION)is ook heel belangrijk aandacht te besteden aan de de mate van vetheid zowel van corticosteroiden als van de bijsmeerzalven. In principe zeggen we bij een droge huid vet zalven en bij een wat nattend eczeem creme gebruiken maar daarbij is natuurlijk ook de communicatie met
+de patiënt belangrijk.
+M(LOCATION)naast die behandeling van 't eczeem hè dat gaat u nu één keer per dag doen willen we ook de droge huid aanpakken. Hè u zei net al net schuurpapier. Doen we hier een klein beetje van.
+J(LOCATION)
+Doen we even op die arm. E(LOCATION)dan zal ik eventjes met die haren meesmeren. Proberen we die daar. E(LOCATION)dan doe ik ze alledrie even een stipje erop. Z(LOCATION) E(LOCATION)dat komt u misschien wel bekend voor.
+J(LOCATION) D(LOCATION)is heel fijn. V(LOCATION)je al als je met een lepeltje erover heen gaat.
+Is ook een andere kleur hè als je die zo ziet.
+J(LOCATION)
+J(LOCATION) J(LOCATION) H(LOCATION)is allemaal zalf en die paraffine vaseline is de allervetste en deze 2 zalven die zijn iets minder vet en vaak vindt de ene patiënt de lanettezalf lekker en de ander de cetomacrogolzalf. M(LOCATION)goed. P(LOCATION)u maar eens even. E(LOCATION)dan goed even met die haren meesmeren. J(LOCATION) D(LOCATION)niet zo terug. M(LOCATION)alleen eigenlijk zo. J(LOCATION)
+Z(LOCATION)
+Y(LOCATION) H(LOCATION)goed. D(LOCATION)s één. E(LOCATION)dan die andere. H(LOCATION)hoe voelt ie?
+voelt wel beetje als die.
+J(LOCATION)
+T(LOCATION)die 2 zit niet zoveel verschil.
+N(LOCATION)qua vetheid valt dat ook heel erg mee. H(LOCATION)is net een andere. D(PERSON)heeft net iets vinden sommige mensen een korreltje. I(LOCATION)weet niet of u dat ook voelt?
+N(LOCATION)dat voel ik niet.
+N(LOCATION)
+H(LOCATION)dit is hem. D(LOCATION)smeert gewoon heel lekker. D(PERSON)kun je ook zien hoe hoe als ie glimt hè?
+J(LOCATION)die is dus nog vetter.
+J(LOCATION)
+J(LOCATION)
+D(LOCATION)je kan niet eigenlijk volstaan met één bijsmeerzalf of één lokaal corticosteroid. M(LOCATION)dat moet echt afgestemd zijn op de patiënt en dat is ook de reden dat wij in die smeerpoli ook aandacht besteden aan de verschillende bijsmeerzalven de patiënt ook laten voelen. W(LOCATION)dan je toch vaak dat de
+patiënt de ene patiënt vind cetomacrogolzalf prima. M(LOCATION)als je hem aan de andere patiënt voorlegt en die gaat het proberen en die zegt nee dit vind ik niks. D(PERSON)voelt niet prettig. En we weten al dat als dat op dat moment al niet prettig is dat de therapietrouw natuurlijk heel laag zou zijn. H(LOCATION)mooiste zou natuurlijk zijn als de apothekers overal in het land de smeer instructies zouden gaan geven zoals wij hier op de poli doen. W(PERSON)kiezen wij nemen daar veel tijd voor. D(LOCATION)s best kostbaar. E(LOCATION)ik denk dat het heel goed zou zijn
+als alle apothekers deze informatie in beperkte mate aan iedere patiënt zouden geven. H(LOCATION)smeren volgens de fingertip unit. A(LOCATION)afbouwen en het goed gebruik van de bijsmeerzalven en ook de keuze geven in de type bijsmeer.

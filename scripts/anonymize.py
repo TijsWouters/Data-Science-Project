@@ -25,6 +25,7 @@ class Annotation:
 
     @staticmethod
     def fromNLTK(annotation):
+        # Not used in this implementation; annotations are created directly.
         pass
 
     @staticmethod
@@ -53,12 +54,58 @@ class Document:
         doc = nlp(self.text)
         self.annotations = []
         for ent in doc.ents:
-            if (ent.label_ in SPACY_TAG_MAPPING.keys()):
+            if ent.label_ in SPACY_TAG_MAPPING.keys():
                 annotation = Annotation.fromSpacy(ent)
                 self.addAnnotation(annotation)
     
     def annotateWithNLTK(self):
-        pass
+        import nltk
+        nltk.download('punkt', quiet=True)
+        nltk.download('averaged_perceptron_tagger', quiet=True)
+        nltk.download('maxent_ne_chunker', quiet=True)
+        nltk.download('words', quiet=True)
+
+        annotations = []
+        sentences = nltk.sent_tokenize(self.text, language='dutch')
+        offset = 0
+
+        for sentence in sentences:
+            tokenizer = nltk.tokenize.TreebankWordTokenizer()
+            token_spans = list(tokenizer.span_tokenize(sentence))
+            tokens = [sentence[start:end] for start, end in token_spans]
+            pos_tags = nltk.pos_tag(tokens)
+
+            tree = nltk.ne_chunk(pos_tags)
+
+            token_index = 0 
+            for subtree in tree:
+                if isinstance(subtree, nltk.Tree):
+                    entity_tokens = [leaf[0] for leaf in subtree.leaves()]
+                    entity_text = " ".join(entity_tokens)
+
+                    if token_index < len(token_spans):
+                        start_char = token_spans[token_index][0]
+                    else:
+                        start_char = 0
+
+                    end_char = token_spans[token_index][1] if token_index < len(token_spans) else 0
+                    for i in range(len(subtree.leaves())):
+                        if token_index + i < len(token_spans):
+                            end_char = token_spans[token_index + i][1]
+                    token_index += len(subtree.leaves())
+
+                    global_start = offset + start_char
+                    global_end = offset + end_char
+                    nltk_label = subtree.label()
+
+                    mapped_tag = NLTK_TAG_MAPPING[nltk_label]
+                    annotation = Annotation(entity_text, mapped_tag, global_start, global_end)
+                    annotations.append(annotation)
+                else:
+                    token_index += 1
+            offset += len(sentence) + 1
+
+        self.annotations = annotations
     
     def annotateWithDeduce(self):
         doc = deduce.deidentify(self.text)
@@ -80,7 +127,7 @@ class Document:
     def label(self):
         labeled_text = self.text
         for annotation in sorted(self.annotations, key=lambda a: a.start, reverse=True):
-            # label 'Bert' as '<Bert>{NAME}'
+            # Label 'Bert' as '<Bert>{NAME}'
             label = f"<{annotation.text}>{{{annotation.tag}}}"
             text_list = list(labeled_text)
             text_list[annotation.start:annotation.end] = list(label)
@@ -110,24 +157,24 @@ def process_file(input_file, output_file, method, target):
         f.write(result)
 
 if __name__ == "__main__":
-    if (len(sys.argv) < 5):
+    if len(sys.argv) < 5:
         print("Usage: python anonymize.py <method> <target> <input_file> <output_file>")  
         sys.exit(1)
         
     method, target, input_file, output_file = sys.argv[1].lower(), sys.argv[2].lower(), sys.argv[3], sys.argv[4]
     
-    if (method not in ["spacy", "nltk", "deduce", "deidentify"]):
+    if method not in ["spacy", "nltk", "deduce", "deidentify"]:
         print(f"ERROR: Method {method} is not supported. Supported methods are 'spacy', 'nltk', 'deduce', and 'deidentify'")
         sys.exit(1)
     
-    if (target not in ["anonymize", "label"]):
+    if target not in ["anonymize", "label"]:
         print(f"ERROR: Target {target} is not supported. Supported targets are 'anonymize' and 'label'")
     
-    if (not os.path.exists(input_file)):
+    if not os.path.exists(input_file):
         print(f"ERROR: File {input_file} does not exist")
         sys.exit(1)
         
-    if (method == "deidentify"):
+    if method == "deidentify":
         from deidentify.base import Document as DeidentifyDocument
         from deidentify.tokenizer import TokenizerFactory
         from deidentify.taggers import FlairTagger
@@ -135,23 +182,21 @@ if __name__ == "__main__":
         model = 'model_bilstmcrf_ons_fast-v0.2.0'
         tokenizer = TokenizerFactory().tokenizer(corpus='ons', disable=("tagger", "ner"))
         tagger = FlairTagger(model=model, tokenizer=tokenizer, verbose=False)
-    elif (method == "spacy"):
+    elif method == "spacy":
         import spacy
         nlp = spacy.load("nl_core_news_lg")
-    elif (method == "nltk"):
+    elif method == "nltk":
+        # For NLTK, no additional setup is needed here.
         pass
-    elif (method == "deduce"):
+    elif method == "deduce":
         from deduce import Deduce
         deduce = Deduce()
         
-        
-    if (os.path.isdir(input_file)):
+    if os.path.isdir(input_file):
         os.makedirs(output_file, exist_ok=True)   
         for file in os.listdir(input_file):
             input_file_path = os.path.join(input_file, file)
             output_file_path = os.path.join(output_file, file)
             process_file(input_file_path, output_file_path, method, target)
     else:
-        process_file(input_file, output_file, method, target)
-        
-    
+        process_file(input_file, output_file, method, target)  

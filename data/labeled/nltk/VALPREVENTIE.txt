@@ -1,0 +1,78 @@
+<Het>{ORGANIZATION} is denk ik gewoon heel belangrijk dat als mensen langer thuis willen blijven wonen dat ze dat veilig kunnen doen. <En>{ORGANIZATION} als je ouder wordt dan gaat je spierkracht ach achteruit je gaat meer medicijnen gebruiken. <Dus>{ORGANIZATION} de kans op vallen wordt steeds groter. En en ja dan moet je samen wat aan doen met andere zorgverleners die op andere punten expertise hebben. U vertelde dat u 2 keer was gevallen deze week.
+<Ja>{ORGANIZATION}. <Dat>{ORGANIZATION} klopt. <Toen>{ORGANIZATION} ik bijvoorbeeld de achterklep van de auto wilde dichtdoen en die net ietsje te hoog voor me was waardoor ik ook m'n evenwicht verloor en achterover viel op straat. Hè op de parkeerplaats. <En>{ORGANIZATION} dat was ook akelig want die auto's die kwamen
+daar natuurlijk allemaal uit. <En>{ORGANIZATION} gelukkig zag een meneer mij liggen. <Dus>{ORGANIZATION} die sprong uit de auto en rende naar me toe om me overeind te krijgen.
+<Ja>{ORGANIZATION}.
+<Vuilniszakken>{ORGANIZATION} wegbrengen. <En>{PERSON} met zak en al omvallen.
+<Jeetje>{ORGANIZATION}. <En>{ORGANIZATION} doet u ook aan aan sporten bij de fysio?
+<Ik>{ORGANIZATION} doe niet aan sport. <Ik>{ORGANIZATION} doe m'n eigen oefeningen.
+<Ja>{ORGANIZATION}.
+<Necrotiserende>{ORGANIZATION} myositis. <En>{ORGANIZATION} ik doe mee met de ochtendgymnastiek op
+televisie. <Dat>{ORGANIZATION} doe ik wel.
+<Ja>{ORGANIZATION}. <Met>{PERSON} <Nederland>{ORGANIZATION} beweegt?
+<Nederland>{ORGANIZATION} beweegt.
+<Okee>{ORGANIZATION}. <En>{ORGANIZATION} merkt u dat het met de spieren goed gaat of gaat dat achteruit?
+<Nee>{ORGANIZATION} dat gaat achteruit.
+<Oke>{ORGANIZATION}.
+<Ja>{ORGANIZATION}.
+<Oke>{ORGANIZATION}.
+<En>{ORGANIZATION} daar is dus ook een klein probleem.
+<Ja>{ORGANIZATION}.
+<Dat>{ORGANIZATION} de cholesterolverlagers daar ook mee kunnen helpen.
+<Ja>{ORGANIZATION}.
+<Dat>{PERSON} 't achteruitgaat.
+<En>{ORGANIZATION} hoe gaat het met eten?
+<Ik>{ORGANIZATION} probeer 1200 calorieën ofzo.
+Waarom doet u dat?
+<Omdat>{ORGANIZATION} ik omdat ik moet afvallen.
+<Van>{ORGANIZATION} wie?
+<Van>{PERSON} mijzelf om te proberen van de van de medicijnen af te komen.
+<Okee>{ORGANIZATION} okee.
+Dus en ik ben natuurlijk ook aan 't krimpen door de ouderdom.
+<Ja>{ORGANIZATION}.
+<Dus>{ORGANIZATION} ik wil alles doen om te proberen
+dat goed op de rit te houden. <En>{ORGANIZATION} het werkt ook wel. <En>{PERSON} met metformine val ik ook af want er is ook diabetes door de pr prednison van een tijd geleden. <Dat>{ORGANIZATION} is nooit meer helemaal goed gekomen. <Enfin>{ORGANIZATION} dus d'r is een hele reeks van kwalen die dus dus zorgen dat je ook kan aankomen in plaats van afvallen.
+<Het>{ORGANIZATION} is eigenlijk is het makkelijk te organiseren om om valpreventie te te gaan doen. Je moet 't met samen met een paar mensen doen onder andere die zich specialiseren in bewegen zoals de fysio en mensen die zich verdiepen in kwetsbare ouders dus de <POH>{ORGANIZATION} ouderenzorg bij de
+huisarts en dan langzaam kun je je netwerk uitbreiden als je meer expertise nodig hebt. <Maar>{ORGANIZATION} daar ja als je klein begint heb je gewoon een paar mensen nodig zou ik daar beginnen. U bent gewoon gevallen. U bent ook wel eens duizelig.
+<Ja>{ORGANIZATION}.
+<Zelfstandig>{ORGANIZATION} lopen ja. <Maar>{ORGANIZATION} wel met hulpmiddel.
+<Ja>{ORGANIZATION}.
+<Niet>{ORGANIZATION} altijd.
+<Nee>{ORGANIZATION} niet altijd.
+<Heeft>{ORGANIZATION} u problemen met uw voeten?
+<Ja>{ORGANIZATION}.
+<Heeft>{ORGANIZATION} u heeft u ook minder gevoel in uw voeten door?
+<Ja>{ORGANIZATION}.
+<Ja>{ORGANIZATION}. <Okee>{ORGANIZATION}. Last van.
+<Dus>{ORGANIZATION} dat kan ook een factor zijn.
+<Ja>{ORGANIZATION}. Last van pijnlijke of stijve gewrichten?
+<Die>{ORGANIZATION} probeer ik zo soepel mogelijk te houden maar laten we d'r eerlijk over zijn. We worden ook ouder met z'n allen.
+<Ja>{ORGANIZATION}.
+<Dus>{ORGANIZATION} volmaakt wordt het natuurlijk nooit meer.
+<Nee>{ORGANIZATION}. <Maar>{ORGANIZATION} zoals u zegt u wil wel gewoon
+thuis blijven met met uw man.
+<Ik>{ORGANIZATION} wil zo lang mogelijk thuis blijven wonen met mijn man maar het is wel een zwaar traject. <Omdat>{ORGANIZATION} hij Alzheimerpatiënt is.
+<Ja>{ORGANIZATION}.
+<Dus>{ORGANIZATION} dat is dat is wel heftig.
+<Ja>{ORGANIZATION}. <Heeft>{ORGANIZATION} u wel eens wat ge gebroken?
+<Nooit>{ORGANIZATION}.
+<Nooit>{ORGANIZATION}. <Mooi>{ORGANIZATION}. <Gebruikt>{ORGANIZATION} u zelf ook nog medicatie anders dan wat u van ons krijgt?
+<Vitamine>{PERSON} <D>{ORGANIZATION}.
+<Ja>{ORGANIZATION}.
+<Omdat>{ORGANIZATION} wij allebei vitamine D tekort hadden. <En>{ORGANIZATION} nou dat is het nu.
+<En>{ORGANIZATION} tegen de pijn?
+<Nee>{ORGANIZATION}.
+<Okee>{ORGANIZATION}. <Ik>{ORGANIZATION} ik ga dit straks even bij <Liesbeth>{PERSON} inleveren.
+Is goed.
+<Dan>{ORGANIZATION} gaat zij denk ik contact met u opnemen om nog wat vragen door te nemen.
+<Ja>{ORGANIZATION}.
+<En>{ORGANIZATION} dan ga ik ook even de labwaarden bij de huisarts
+opvragen.
+<Ja>{ORGANIZATION}?
+<Bloeddruk>{ORGANIZATION} enzo. <En>{ORGANIZATION} dan gaan we nog een keer alle medicatie goed doornemen.
+<Ja>{ORGANIZATION}.
+<En>{ORGANIZATION} dan misschien is 't ook leuk om weer gewoon samen met dokter <Mus>{PERSON} een afspraak te maken.
+<Ja>{ORGANIZATION}.
+Dat we er toch weer opnieuw naar kijken.
+<Want>{ORGANIZATION} ik wil echt goed huiswerk maken want ik ben toch weer een paar dingen tegengekomen waarvan ik dacht oh daar moet ik echt even over vragen.
+<Okee>{ORGANIZATION}. Ik heb net mevrouw <Cameron>{PERSON} gesproken en wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. <Kan>{ORGANIZATION} een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. <En>{ORGANIZATION} het is heel belangrijk dat
+daar thuis wordt gekeken of d'r redenen zijn waarom ze kan vallen dus ik denk dat er meerdere mensen aan de slag moeten om het probleem van mevrouw <Cameron>{PERSON} op te lossen.
