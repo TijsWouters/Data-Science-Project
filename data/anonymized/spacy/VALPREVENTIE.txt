@@ -8,13 +8,13 @@ Ik doe niet aan sport. Ik doe m'n eigen oefeningen.
 Ja.
 (LOCATION) myositis. En ik doe mee met de ochtendgymnastiek op
 televisie. Dat doe ik wel.
-Ja. Met (ORGANIZATION) beweegt?
-(ORGANIZATION) beweegt.
+Ja. Met (ORGANISATION) beweegt?
+(ORGANISATION) beweegt.
 (LOCATION). En merkt u dat het met de spieren goed gaat of gaat dat achteruit?
 Nee dat gaat achteruit.
-(ORGANIZATION).
+(ORGANISATION).
 Ja.
-(ORGANIZATION).
+(ORGANISATION).
 En daar is dus ook een klein probleem.
 Ja.
 Dat de cholesterolverlagers daar ook mee kunnen helpen.

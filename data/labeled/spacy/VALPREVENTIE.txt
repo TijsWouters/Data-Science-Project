@@ -8,13 +8,13 @@ Ik doe niet aan sport. Ik doe m'n eigen oefeningen.
 Ja.
 <Necrotiserende>{LOCATION} myositis. En ik doe mee met de ochtendgymnastiek op
 televisie. Dat doe ik wel.
-Ja. Met <Nederland>{ORGANIZATION} beweegt?
-<Nederland>{ORGANIZATION} beweegt.
+Ja. Met <Nederland>{ORGANISATION} beweegt?
+<Nederland>{ORGANISATION} beweegt.
 <Okee>{LOCATION}. En merkt u dat het met de spieren goed gaat of gaat dat achteruit?
 Nee dat gaat achteruit.
-<Oke>{ORGANIZATION}.
+<Oke>{ORGANISATION}.
 Ja.
-<Oke>{ORGANIZATION}.
+<Oke>{ORGANISATION}.
 En daar is dus ook een klein probleem.
 Ja.
 Dat de cholesterolverlagers daar ook mee kunnen helpen.

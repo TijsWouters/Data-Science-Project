@@ -31,7 +31,7 @@ Dus en ik ben natuurlijk ook aan 't krimpen door de ouderdom.
 (LOCATION).
 (LOCATION) ik wil alles doen om te proberen
 dat goed op de rit te houden. (LOCATION) het werkt ook wel. (PERSON) met metformine val ik ook af want er is ook diabetes door de pr prednison van een tijd geleden. (LOCATION) is nooit meer helemaal goed gekomen. (LOCATION) dus d'r is een hele reeks van kwalen die dus dus zorgen dat je ook kan aankomen in plaats van afvallen.
-(LOCATION) is eigenlijk is het makkelijk te organiseren om om valpreventie te te gaan doen. Je moet 't met samen met een paar mensen doen onder andere die zich specialiseren in bewegen zoals de fysio en mensen die zich verdiepen in kwetsbare ouders dus de (ORGANIZATION) ouderenzorg bij de
+(LOCATION) is eigenlijk is het makkelijk te organiseren om om valpreventie te te gaan doen. Je moet 't met samen met een paar mensen doen onder andere die zich specialiseren in bewegen zoals de fysio en mensen die zich verdiepen in kwetsbare ouders dus de (ORGANISATION) ouderenzorg bij de
 huisarts en dan langzaam kun je je netwerk uitbreiden als je meer expertise nodig hebt. (LOCATION) daar ja als je klein begint heb je gewoon een paar mensen nodig zou ik daar beginnen. U bent gewoon gevallen. U bent ook wel eens duizelig.
 (LOCATION).
 (LOCATION) lopen ja. (LOCATION) wel met hulpmiddel.
@@ -56,7 +56,7 @@ thuis blijven met met uw man.
 (LOCATION). (LOCATION) u wel eens wat ge gebroken?
 (LOCATION).
 (LOCATION). (LOCATION). (LOCATION) u zelf ook nog medicatie anders dan wat u van ons krijgt?
-(PERSON) (ORGANIZATION).
+(PERSON) (ORGANISATION).
 (LOCATION).
 (LOCATION) wij allebei vitamine D tekort hadden. (LOCATION) nou dat is het nu.
 (LOCATION) tegen de pijn?
