@@ -38,7 +38,18 @@ class Annotation:
         mapped_tag = DEIDENTIFY_TAG_MAPPING[annotation.tag]
         return Annotation(annotation.text, mapped_tag, annotation.start, annotation.end)
     
+    @staticmethod
+    def fromStanza(annotation):
+        # Ensure that STANZA_TAG_MAPPING is defined in your tagmapping module.
+        mapped_tag = STANZA_TAG_MAPPING[annotation.type]
+        return Annotation(annotation.text, mapped_tag, annotation.start_char, annotation.end_char)
     
+    @staticmethod
+    def fromFrog(token, entity_type):
+        # Map the Frog NE tag via FROG_TAG_MAPPING defined in your tagmapping module.
+        mapped_tag = FROG_TAG_MAPPING.get(entity_type, "OTHER")
+        return Annotation(token['word'], mapped_tag, token['start'], token['end'])
+
 class Document:
     def __init__(self, text):
         self.text = text
@@ -59,12 +70,6 @@ class Document:
                 self.addAnnotation(annotation)
     
     def annotateWithNLTK(self):
-        import nltk
-        nltk.download('punkt', quiet=True)
-        nltk.download('averaged_perceptron_tagger', quiet=True)
-        nltk.download('maxent_ne_chunker', quiet=True)
-        nltk.download('words', quiet=True)
-
         annotations = []
         sentences = nltk.sent_tokenize(self.text, language='dutch')
         offset = 0
@@ -114,7 +119,64 @@ class Document:
     def annotateWithDeidentify(self):
         docs = [DeidentifyDocument(name='test', text=self.text)]
         self.annotations = [Annotation.fromDeidentify(a) for a in tagger.annotate(docs)[0].annotations]
-        
+    
+    def annotateWithStanza(self):
+        doc = nlp_stanza(self.text)
+        self.annotations = []
+        for ent in doc.entities:
+            if ent.type in STANZA_TAG_MAPPING.keys():
+                annotation = Annotation.fromStanza(ent)
+                self.addAnnotation(annotation)
+    
+    def annotateWithFrog(self):
+        # Process the text using Frog. The result is expected to be a list of sentences,
+        # each containing a list of token dictionaries.
+        result = frog_nlp.process(self.text)
+        annotations = []
+        # For each sentence, merge consecutive tokens with the same non-"O" NE label.
+        for sentence in result:
+            current_entity_tokens = []
+            current_entity_type = None
+            current_entity_start = None
+            current_entity_end = None
+            
+            for token in sentence:
+                ne = token.get('NE', "O")
+                if ne == "O" or ne == "":
+                    if current_entity_tokens:
+                        entity_text = " ".join(current_entity_tokens)
+                        ann = Annotation(entity_text, FROG_TAG_MAPPING.get(current_entity_type, "OTHER"),
+                                         current_entity_start, current_entity_end)
+                        annotations.append(ann)
+                        current_entity_tokens = []
+                        current_entity_type = None
+                        current_entity_start = None
+                        current_entity_end = None
+                else:
+                    # Continue an existing entity if the type matches
+                    if current_entity_tokens and ne == current_entity_type:
+                        current_entity_tokens.append(token['word'])
+                        current_entity_end = token['end']
+                    else:
+                        # If switching entity types, finish the current one.
+                        if current_entity_tokens:
+                            entity_text = " ".join(current_entity_tokens)
+                            ann = Annotation(entity_text, FROG_TAG_MAPPING.get(current_entity_type, "OTHER"),
+                                             current_entity_start, current_entity_end)
+                            annotations.append(ann)
+                        # Start a new entity.
+                        current_entity_tokens = [token['word']]
+                        current_entity_type = ne
+                        current_entity_start = token['start']
+                        current_entity_end = token['end']
+            # End of sentence: flush any remaining entity.
+            if current_entity_tokens:
+                entity_text = " ".join(current_entity_tokens)
+                ann = Annotation(entity_text, FROG_TAG_MAPPING.get(current_entity_type, "OTHER"),
+                                 current_entity_start, current_entity_end)
+                annotations.append(ann)
+        self.annotations = annotations
+    
     def anonymize(self):
         anonymized_text = self.text
         for annotation in sorted(self.annotations, key=lambda a: a.start, reverse=True):
@@ -127,7 +189,7 @@ class Document:
     def label(self):
         labeled_text = self.text
         for annotation in sorted(self.annotations, key=lambda a: a.start, reverse=True):
-            # Label 'Bert' as '<Bert>{NAME}'
+            # Label entities in the form "<entity_text>{TAG}"
             label = f"<{annotation.text}>{{{annotation.tag}}}"
             text_list = list(labeled_text)
             text_list[annotation.start:annotation.end] = list(label)
@@ -147,6 +209,10 @@ def process_file(input_file, output_file, method, target):
         document.annotateWithDeduce()
     elif method == "deidentify":
         document.annotateWithDeidentify()
+    elif method == "stanza":
+        document.annotateWithStanza()
+    elif method == "frog":
+        document.annotateWithFrog()
         
     if target == "anonymize":
         result = document.anonymize()
@@ -163,12 +229,13 @@ if __name__ == "__main__":
         
     method, target, input_file, output_file = sys.argv[1].lower(), sys.argv[2].lower(), sys.argv[3], sys.argv[4]
     
-    if method not in ["spacy", "nltk", "deduce", "deidentify"]:
-        print(f"ERROR: Method {method} is not supported. Supported methods are 'spacy', 'nltk', 'deduce', and 'deidentify'")
+    if method not in ["spacy", "nltk", "deduce", "deidentify", "stanza", "frog"]:
+        print(f"ERROR: Method {method} is not supported. Supported methods are 'spacy', 'nltk', 'deduce', 'deidentify', 'stanza', 'frog'")
         sys.exit(1)
     
     if target not in ["anonymize", "label"]:
         print(f"ERROR: Target {target} is not supported. Supported targets are 'anonymize' and 'label'")
+        sys.exit(1)
     
     if not os.path.exists(input_file):
         print(f"ERROR: File {input_file} does not exist")
@@ -186,12 +253,23 @@ if __name__ == "__main__":
         import spacy
         nlp = spacy.load("nl_core_news_lg")
     elif method == "nltk":
-        # For NLTK, no additional setup is needed here.
-        pass
+        import nltk
+        nltk.download('punkt', quiet=True)
+        nltk.download('averaged_perceptron_tagger', quiet=True)
+        nltk.download('maxent_ne_chunker', quiet=True)
+        nltk.download('words', quiet=True)
     elif method == "deduce":
         from deduce import Deduce
         deduce = Deduce()
-        
+    elif method == "stanza":
+        import stanza
+        stanza.download('nl', verbose=False)
+        nlp_stanza = stanza.Pipeline('nl', processors='tokenize,ner', use_gpu=False)
+    elif method == "frog":
+        import frog
+        # Initialize the Frog pipeline without parsing (adjust parameters as needed).
+        frog_nlp = frog.Frog(parser=False)
+       
     if os.path.isdir(input_file):
         os.makedirs(output_file, exist_ok=True)   
         for file in os.listdir(input_file):
@@ -199,4 +277,4 @@ if __name__ == "__main__":
             output_file_path = os.path.join(output_file, file)
             process_file(input_file_path, output_file_path, method, target)
     else:
-        process_file(input_file, output_file, method, target)  
+        process_file(input_file, output_file, method, target)

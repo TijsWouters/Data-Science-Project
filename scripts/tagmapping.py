@@ -31,6 +31,22 @@ DEIDENTIFY_TAG_MAPPING = {
     'URL_IP': 'CONTACT_INFORMATION',
 }
 
+FROG_TAG_MAPPING = {
+    "PER": "NAME",
+    "ORG": "ORGANISATION",
+    "LOC": "LOCATION",
+    "MISC": "OTHER",
+    "DATE": "DATE"  # Include if Frog outputs DATE entities
+}
+
+STANZA_TAG_MAPPING = {
+    "PER": "NAME",
+    "ORG": "ORGANISATION",
+    "LOC": "LOCATION",
+    "MISC": "OTHER",
+    "DATE": "DATE"  # Optional: include if your Stanza pipeline outputs DATE entities.
+}
+
 SPACY_TAG_MAPPING = {
     'PERSON': 'NAME',
     'DATE': 'DATE',
