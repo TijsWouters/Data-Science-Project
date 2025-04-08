@@ -43,12 +43,6 @@ class Annotation:
         # Ensure that STANZA_TAG_MAPPING is defined in your tagmapping module.
         mapped_tag = STANZA_TAG_MAPPING[annotation.type]
         return Annotation(annotation.text, mapped_tag, annotation.start_char, annotation.end_char)
-    
-    @staticmethod
-    def fromFrog(token, entity_type):
-        # Map the Frog NE tag via FROG_TAG_MAPPING defined in your tagmapping module.
-        mapped_tag = FROG_TAG_MAPPING.get(entity_type, "OTHER")
-        return Annotation(token['word'], mapped_tag, token['start'], token['end'])
 
 class Document:
     def __init__(self, text):
@@ -128,55 +122,6 @@ class Document:
                 annotation = Annotation.fromStanza(ent)
                 self.addAnnotation(annotation)
     
-    def annotateWithFrog(self):
-        # Process the text using Frog. The result is expected to be a list of sentences,
-        # each containing a list of token dictionaries.
-        result = frog_nlp.process(self.text)
-        annotations = []
-        # For each sentence, merge consecutive tokens with the same non-"O" NE label.
-        for sentence in result:
-            current_entity_tokens = []
-            current_entity_type = None
-            current_entity_start = None
-            current_entity_end = None
-            
-            for token in sentence:
-                ne = token.get('NE', "O")
-                if ne == "O" or ne == "":
-                    if current_entity_tokens:
-                        entity_text = " ".join(current_entity_tokens)
-                        ann = Annotation(entity_text, FROG_TAG_MAPPING.get(current_entity_type, "OTHER"),
-                                         current_entity_start, current_entity_end)
-                        annotations.append(ann)
-                        current_entity_tokens = []
-                        current_entity_type = None
-                        current_entity_start = None
-                        current_entity_end = None
-                else:
-                    # Continue an existing entity if the type matches
-                    if current_entity_tokens and ne == current_entity_type:
-                        current_entity_tokens.append(token['word'])
-                        current_entity_end = token['end']
-                    else:
-                        # If switching entity types, finish the current one.
-                        if current_entity_tokens:
-                            entity_text = " ".join(current_entity_tokens)
-                            ann = Annotation(entity_text, FROG_TAG_MAPPING.get(current_entity_type, "OTHER"),
-                                             current_entity_start, current_entity_end)
-                            annotations.append(ann)
-                        # Start a new entity.
-                        current_entity_tokens = [token['word']]
-                        current_entity_type = ne
-                        current_entity_start = token['start']
-                        current_entity_end = token['end']
-            # End of sentence: flush any remaining entity.
-            if current_entity_tokens:
-                entity_text = " ".join(current_entity_tokens)
-                ann = Annotation(entity_text, FROG_TAG_MAPPING.get(current_entity_type, "OTHER"),
-                                 current_entity_start, current_entity_end)
-                annotations.append(ann)
-        self.annotations = annotations
-    
     def anonymize(self):
         anonymized_text = self.text
         for annotation in sorted(self.annotations, key=lambda a: a.start, reverse=True):
@@ -211,8 +156,6 @@ def process_file(input_file, output_file, method, target):
         document.annotateWithDeidentify()
     elif method == "stanza":
         document.annotateWithStanza()
-    elif method == "frog":
-        document.annotateWithFrog()
         
     if target == "anonymize":
         result = document.anonymize()
@@ -229,8 +172,8 @@ if __name__ == "__main__":
         
     method, target, input_file, output_file = sys.argv[1].lower(), sys.argv[2].lower(), sys.argv[3], sys.argv[4]
     
-    if method not in ["spacy", "nltk", "deduce", "deidentify", "stanza", "frog"]:
-        print(f"ERROR: Method {method} is not supported. Supported methods are 'spacy', 'nltk', 'deduce', 'deidentify', 'stanza', 'frog'")
+    if method not in ["spacy", "nltk", "deduce", "deidentify", "stanza"]:
+        print(f"ERROR: Method {method} is not supported. Supported methods are 'spacy', 'nltk', 'deduce', 'deidentify', 'stanza'")
         sys.exit(1)
     
     if target not in ["anonymize", "label"]:
@@ -265,10 +208,6 @@ if __name__ == "__main__":
         import stanza
         stanza.download('nl', verbose=False)
         nlp_stanza = stanza.Pipeline('nl', processors='tokenize,ner', use_gpu=False)
-    elif method == "frog":
-        import frog
-        # Initialize the Frog pipeline without parsing (adjust parameters as needed).
-        frog_nlp = frog.Frog(parser=False)
        
     if os.path.isdir(input_file):
         os.makedirs(output_file, exist_ok=True)   
