@@ -1,78 +1,78 @@
-(LOCATION) is denk ik gewoon heel belangrijk dat als mensen langer thuis willen blijven wonen dat ze dat veilig kunnen doen. (LOCATION) als je ouder wordt dan gaat je spierkracht ach achteruit je gaat meer medicijnen gebruiken. (LOCATION) de kans op vallen wordt steeds groter. En en ja dan moet je samen wat aan doen met andere zorgverleners die op andere punten expertise hebben. U vertelde dat u 2 keer was gevallen deze week.
-(LOCATION). (LOCATION) klopt. (LOCATION) ik bijvoorbeeld de achterklep van de auto wilde dichtdoen en die net ietsje te hoog voor me was waardoor ik ook m'n evenwicht verloor en achterover viel op straat. Hè op de parkeerplaats. (LOCATION) dat was ook akelig want die auto's die kwamen
-daar natuurlijk allemaal uit. (LOCATION) gelukkig zag een meneer mij liggen. (LOCATION) die sprong uit de auto en rende naar me toe om me overeind te krijgen.
-(LOCATION).
-(LOCATION) wegbrengen. (PERSON) met zak en al omvallen.
-(LOCATION). (LOCATION) doet u ook aan aan sporten bij de fysio?
-(LOCATION) doe niet aan sport. (LOCATION) doe m'n eigen oefeningen.
-(LOCATION).
-(LOCATION) myositis. (LOCATION) ik doe mee met de ochtendgymnastiek op
-televisie. (LOCATION) doe ik wel.
-(LOCATION). (PERSON) (LOCATION) beweegt?
-(LOCATION) beweegt.
-(LOCATION). (LOCATION) merkt u dat het met de spieren goed gaat of gaat dat achteruit?
-(LOCATION) dat gaat achteruit.
-(LOCATION).
-(LOCATION).
-(LOCATION).
-(LOCATION) daar is dus ook een klein probleem.
-(LOCATION).
-(LOCATION) de cholesterolverlagers daar ook mee kunnen helpen.
-(LOCATION).
+(ORGANISATION) is denk ik gewoon heel belangrijk dat als mensen langer thuis willen blijven wonen dat ze dat veilig kunnen doen. (ORGANISATION) als je ouder wordt dan gaat je spierkracht ach achteruit je gaat meer medicijnen gebruiken. (ORGANISATION) de kans op vallen wordt steeds groter. En en ja dan moet je samen wat aan doen met andere zorgverleners die op andere punten expertise hebben. U vertelde dat u 2 keer was gevallen deze week.
+(ORGANISATION). (ORGANISATION) klopt. (ORGANISATION) ik bijvoorbeeld de achterklep van de auto wilde dichtdoen en die net ietsje te hoog voor me was waardoor ik ook m'n evenwicht verloor en achterover viel op straat. Hè op de parkeerplaats. (ORGANISATION) dat was ook akelig want die auto's die kwamen
+daar natuurlijk allemaal uit. (ORGANISATION) gelukkig zag een meneer mij liggen. (ORGANISATION) die sprong uit de auto en rende naar me toe om me overeind te krijgen.
+(ORGANISATION).
+(ORGANISATION) wegbrengen. (PERSON) met zak en al omvallen.
+(ORGANISATION). (ORGANISATION) doet u ook aan aan sporten bij de fysio?
+(ORGANISATION) doe niet aan sport. (ORGANISATION) doe m'n eigen oefeningen.
+(ORGANISATION).
+(ORGANISATION) myositis. (ORGANISATION) ik doe mee met de ochtendgymnastiek op
+televisie. (ORGANISATION) doe ik wel.
+(ORGANISATION). (PERSON) (ORGANISATION) beweegt?
+(ORGANISATION) beweegt.
+(ORGANISATION). (ORGANISATION) merkt u dat het met de spieren goed gaat of gaat dat achteruit?
+(ORGANISATION) dat gaat achteruit.
+(ORGANISATION).
+(ORGANISATION).
+(ORGANISATION).
+(ORGANISATION) daar is dus ook een klein probleem.
+(ORGANISATION).
+(ORGANISATION) de cholesterolverlagers daar ook mee kunnen helpen.
+(ORGANISATION).
 (PERSON) 't achteruitgaat.
-(LOCATION) hoe gaat het met eten?
-(LOCATION) probeer 1200 calorieën ofzo.
+(ORGANISATION) hoe gaat het met eten?
+(ORGANISATION) probeer 1200 calorieën ofzo.
 Waarom doet u dat?
-(LOCATION) ik omdat ik moet afvallen.
-(LOCATION) wie?
+(ORGANISATION) ik omdat ik moet afvallen.
+(ORGANISATION) wie?
 (PERSON) mijzelf om te proberen van de van de medicijnen af te komen.
-(LOCATION) okee.
+(ORGANISATION) okee.
 Dus en ik ben natuurlijk ook aan 't krimpen door de ouderdom.
-(LOCATION).
-(LOCATION) ik wil alles doen om te proberen
-dat goed op de rit te houden. (LOCATION) het werkt ook wel. (PERSON) met metformine val ik ook af want er is ook diabetes door de pr prednison van een tijd geleden. (LOCATION) is nooit meer helemaal goed gekomen. (LOCATION) dus d'r is een hele reeks van kwalen die dus dus zorgen dat je ook kan aankomen in plaats van afvallen.
-(LOCATION) is eigenlijk is het makkelijk te organiseren om om valpreventie te te gaan doen. Je moet 't met samen met een paar mensen doen onder andere die zich specialiseren in bewegen zoals de fysio en mensen die zich verdiepen in kwetsbare ouders dus de (ORGANISATION) ouderenzorg bij de
-huisarts en dan langzaam kun je je netwerk uitbreiden als je meer expertise nodig hebt. (LOCATION) daar ja als je klein begint heb je gewoon een paar mensen nodig zou ik daar beginnen. U bent gewoon gevallen. U bent ook wel eens duizelig.
-(LOCATION).
-(LOCATION) lopen ja. (LOCATION) wel met hulpmiddel.
-(LOCATION).
-(LOCATION) altijd.
-(LOCATION) niet altijd.
-(LOCATION) u problemen met uw voeten?
-(LOCATION).
-(LOCATION) u heeft u ook minder gevoel in uw voeten door?
-(LOCATION).
-(LOCATION). (LOCATION). Last van.
-(LOCATION) dat kan ook een factor zijn.
-(LOCATION). Last van pijnlijke of stijve gewrichten?
-(LOCATION) probeer ik zo soepel mogelijk te houden maar laten we d'r eerlijk over zijn. We worden ook ouder met z'n allen.
-(LOCATION).
-(LOCATION) volmaakt wordt het natuurlijk nooit meer.
-(LOCATION). (LOCATION) zoals u zegt u wil wel gewoon
+(ORGANISATION).
+(ORGANISATION) ik wil alles doen om te proberen
+dat goed op de rit te houden. (ORGANISATION) het werkt ook wel. (PERSON) met metformine val ik ook af want er is ook diabetes door de pr prednison van een tijd geleden. (ORGANISATION) is nooit meer helemaal goed gekomen. (ORGANISATION) dus d'r is een hele reeks van kwalen die dus dus zorgen dat je ook kan aankomen in plaats van afvallen.
+(ORGANISATION) is eigenlijk is het makkelijk te organiseren om om valpreventie te te gaan doen. Je moet 't met samen met een paar mensen doen onder andere die zich specialiseren in bewegen zoals de fysio en mensen die zich verdiepen in kwetsbare ouders dus de (ORGANISATION) ouderenzorg bij de
+huisarts en dan langzaam kun je je netwerk uitbreiden als je meer expertise nodig hebt. (ORGANISATION) daar ja als je klein begint heb je gewoon een paar mensen nodig zou ik daar beginnen. U bent gewoon gevallen. U bent ook wel eens duizelig.
+(ORGANISATION).
+(ORGANISATION) lopen ja. (ORGANISATION) wel met hulpmiddel.
+(ORGANISATION).
+(ORGANISATION) altijd.
+(ORGANISATION) niet altijd.
+(ORGANISATION) u problemen met uw voeten?
+(ORGANISATION).
+(ORGANISATION) u heeft u ook minder gevoel in uw voeten door?
+(ORGANISATION).
+(ORGANISATION). (ORGANISATION). Last van.
+(ORGANISATION) dat kan ook een factor zijn.
+(ORGANISATION). Last van pijnlijke of stijve gewrichten?
+(ORGANISATION) probeer ik zo soepel mogelijk te houden maar laten we d'r eerlijk over zijn. We worden ook ouder met z'n allen.
+(ORGANISATION).
+(ORGANISATION) volmaakt wordt het natuurlijk nooit meer.
+(ORGANISATION). (ORGANISATION) zoals u zegt u wil wel gewoon
 thuis blijven met met uw man.
-(LOCATION) wil zo lang mogelijk thuis blijven wonen met mijn man maar het is wel een zwaar traject. (LOCATION) hij Alzheimerpatiënt is.
-(LOCATION).
-(LOCATION) dat is dat is wel heftig.
-(LOCATION). (LOCATION) u wel eens wat ge gebroken?
-(LOCATION).
-(LOCATION). (LOCATION). (LOCATION) u zelf ook nog medicatie anders dan wat u van ons krijgt?
+(ORGANISATION) wil zo lang mogelijk thuis blijven wonen met mijn man maar het is wel een zwaar traject. (ORGANISATION) hij Alzheimerpatiënt is.
+(ORGANISATION).
+(ORGANISATION) dat is dat is wel heftig.
+(ORGANISATION). (ORGANISATION) u wel eens wat ge gebroken?
+(ORGANISATION).
+(ORGANISATION). (ORGANISATION). (ORGANISATION) u zelf ook nog medicatie anders dan wat u van ons krijgt?
 (PERSON) (ORGANISATION).
-(LOCATION).
-(LOCATION) wij allebei vitamine D tekort hadden. (LOCATION) nou dat is het nu.
-(LOCATION) tegen de pijn?
-(LOCATION).
-(LOCATION). (LOCATION) ik ga dit straks even bij (PERSON) inleveren.
+(ORGANISATION).
+(ORGANISATION) wij allebei vitamine D tekort hadden. (ORGANISATION) nou dat is het nu.
+(ORGANISATION) tegen de pijn?
+(ORGANISATION).
+(ORGANISATION). (ORGANISATION) ik ga dit straks even bij (PERSON) inleveren.
 Is goed.
-(LOCATION) gaat zij denk ik contact met u opnemen om nog wat vragen door te nemen.
-(LOCATION).
-(LOCATION) dan ga ik ook even de labwaarden bij de huisarts
+(ORGANISATION) gaat zij denk ik contact met u opnemen om nog wat vragen door te nemen.
+(ORGANISATION).
+(ORGANISATION) dan ga ik ook even de labwaarden bij de huisarts
 opvragen.
-(LOCATION)?
-(LOCATION) enzo. (LOCATION) dan gaan we nog een keer alle medicatie goed doornemen.
-(LOCATION).
-(LOCATION) dan misschien is 't ook leuk om weer gewoon samen met dokter (PERSON) een afspraak te maken.
-(LOCATION).
+(ORGANISATION)?
+(ORGANISATION) enzo. (ORGANISATION) dan gaan we nog een keer alle medicatie goed doornemen.
+(ORGANISATION).
+(ORGANISATION) dan misschien is 't ook leuk om weer gewoon samen met dokter (PERSON) een afspraak te maken.
+(ORGANISATION).
 Dat we er toch weer opnieuw naar kijken.
-(LOCATION) ik wil echt goed huiswerk maken want ik ben toch weer een paar dingen tegengekomen waarvan ik dacht oh daar moet ik echt even over vragen.
-(LOCATION). Ik heb net mevrouw (PERSON) gesproken en wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. (LOCATION) een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. (LOCATION) het is heel belangrijk dat
+(ORGANISATION) ik wil echt goed huiswerk maken want ik ben toch weer een paar dingen tegengekomen waarvan ik dacht oh daar moet ik echt even over vragen.
+(ORGANISATION). Ik heb net mevrouw (PERSON) gesproken en wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. (ORGANISATION) een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. (ORGANISATION) het is heel belangrijk dat
 daar thuis wordt gekeken of d'r redenen zijn waarom ze kan vallen dus ik denk dat er meerdere mensen aan de slag moeten om het probleem van mevrouw (PERSON) op te lossen.

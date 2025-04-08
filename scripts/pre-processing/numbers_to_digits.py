@@ -64,8 +64,10 @@ def parse_hundred(s: str) -> int:
         return parse_tens(s)
 
 def parse_number(text: str) -> int:
-    # Preprocessing: lowercase and remove spaces and hyphens
-    s = text.lower().replace(" ", "").replace("-", "")
+    # Preprocessing: lowercase and remove spaces and hyphens and ë
+    s = text.lower().replace(" ", "").replace("-", "").replace("ã«", "e")
+    if s.startswith("twee"):
+        print(s)
     if s == "een":
         return "een"
     if s == "":
