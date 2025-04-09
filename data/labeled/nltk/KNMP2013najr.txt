@@ -8,11 +8,11 @@
 Nee.
 recht op mekaar hè. <Dus>{ORGANISATION} dat klopt. <Dat>{ORGANISATION} is dat wat u 
 aan de buitenkant aan uw hand ziet.
-<Ja>{ORGANISATION} ik kan vertellen hoe de reuma is begonnen. <Dat>{ORGANISATION} is ja op m'n twaalfde is dat gebeurd. <Eerst>{ORGANISATION} leek het op colitis ulcerosa maar d'r waren vooral ook al reumafactoren in het bloed bloed geconstateerd. <Op>{ORGANISATION} m'n éénentwintigste is definitief eigenlijk vastgesteld dat het om <Bechter Bechterew>{PERSON} ging. <De>{ORGANISATION} ja dat was nadat ik eigenlijk mijn colitis ulcerosa dat is verholpen door mijn dikke darm te verwijderen waardoor die geen invloed meer had. <En>{ORGANISATION} de reumaklachten bleven wel bestaan. <Voornamelijk>{ORGANISATION} in mijn wervelkolom.
+<Ja>{ORGANISATION} ik kan vertellen hoe de reuma is begonnen. <Dat>{ORGANISATION} is ja op m'n twaalfde is dat gebeurd. <Eerst>{ORGANISATION} leek het op colitis ulcerosa maar d'r waren vooral ook al reumafactoren in het bloed bloed geconstateerd. <Op>{ORGANISATION} m'n éénentwintigste is definitief eigenlijk vastgesteld dat het om <Bechter Bechterew>{NAME} ging. <De>{ORGANISATION} ja dat was nadat ik eigenlijk mijn colitis ulcerosa dat is verholpen door mijn dikke darm te verwijderen waardoor die geen invloed meer had. <En>{ORGANISATION} de reumaklachten bleven wel bestaan. <Voornamelijk>{ORGANISATION} in mijn wervelkolom.
 <Mijn>{ORGANISATION} ervaringen met 't voorschrijven van TNF-alfaremmers zijn heel positief. <Het>{ORGANISATION} belangrijkste punt daarin is dat ze goed werken. <Dat>{ORGANISATION} wil zeggen dat mensen zelf minder pijn ervaren en dat wij als dokter ook minder ontstekingen
 aan de gewrichten zien. <Het>{ORGANISATION} voordeel van het gebruik van biologicals ten opzichte van de conventionele middelen is dat ze voor een groep patiënten die niet reageert op conventionele middelen dus beter werken. <Daarnaast>{ORGANISATION} is het zo dat patiënten ook aangeven dat ze vaak sneller werken. <Dus>{ORGANISATION} dat mensen sneller van hun klachten af zijn.
 <De>{ORGANISATION} reumamiddelen die ik nu krijg dat is dus rituximab een keer een halfjaar en tweemaal daags 100 milligram celebrix.
-En nou gebruikt u die rituximab al een aantal jaren hè. Sinds 2006. <Daarvoor>{PERSON} heeft u ook een
+En nou gebruikt u die rituximab al een aantal jaren hè. Sinds 2006. <Daarvoor>{NAME} heeft u ook een
 hele hoop medicijnen gebruikt waaronder ook de anti TNF-middelen. U bent begonnen met infliximab via het infuus hè?
 <Ja>{ORGANISATION}.
 <Ja>{ORGANISATION}.
@@ -25,7 +25,7 @@ hele hoop medicijnen gebruikt waaronder ook de anti TNF-middelen. U bent begonne
 <En>{ORGANISATION} dat ging ook wel wel wel goed maar ik heb toch het idee dat dit het beste helpt.
 <Ja>{ORGANISATION}. <Ja>{ORGANISATION}. <Dus>{ORGANISATION} je bent echt gewisseld van de medicijnen omdat het onvoldoende werkte op de reuma?
 <Ja>{ORGANISATION}.
-<Ja>{ORGANISATION}. <En>{PERSON} had u daar last van?
+<Ja>{ORGANISATION}. <En>{NAME} had u daar last van?
 Had u daar bijwerkingen van? <Van>{ORGANISATION} die middelen? <Weet>{ORGANISATION} u dat nog?
 <Nou>{ORGANISATION} van die enbrel in 't begin dus wel. <Die>{ORGANISATION} spuitplek die erg opzette.
 U kreeg echt van die plakaten in het been?
@@ -37,7 +37,7 @@ U kreeg echt van die plakaten in het been?
 Sinds mijn twintigste ongeveer of begin 20 ben ik dan met de salozopyrine doorgegaan. <En>{ORGANISATION} dat was dan ook tegen de reuma . <Toen>{ORGANISATION} ik besloot om ja rond m'n dertigste iets iets later wilde ik graag vader worden en toen ben ik gestopt met de salozopyrine en toen ik vader werd ben ik ook niet meer gestart daarmee. Dus eigenlijk heb ik 't de laatste 13 jaar denk ik ongeveer alleen op paracetamol en ibuprofen uitgezongen.
 <Soms>{ORGANISATION} is er angst bij patiënten. <Ook>{ORGANISATION} omdat er natuurlijk zeldzame toch ernstige bijwerkingen kunnen zijn bij de anti TNF-middelen zoals MS-achtige aandoeningen zoals ook bijvoorbeeld heel simpel psoriasis kan ontstaan of kan opvlammen juist door de anti <TNF>{ORGANISATION}. <Het>{ORGANISATION} risico op maligniteiten dat is natuurlijk een angstig iets voor mensen dat ze reuma hebben en als ze een medicijn gaan gebruiken misschien wel kanker daarvan krijgen. Over het algemeen proberen we mensen goed voor te lichten en het risico op deze zeldzame dingen in kaart te brengen dat dat een heel
 klein risico is en dat het hebben van een actieve reumatoïde artritis ook een risicofactor is op hart en vaatziekten verminderde levensduur et cetera. <En>{ORGANISATION} is het al een beetje kiezen tussen 2 kwaden.
-In 2008 kwam ik bij dokter <Dekstra>{PERSON} en die begon over op gegeven moment over biologicals en dat ik daar wellecht wellicht voor in aanmerking zou komen. Ja na wat informatie te hebben gekregen ingewonnen durfde ik het eigenlijk niet aan. <Omdat>{ORGANISATION} ja ik het ging eigenlijk best goed vond ik relatief gezien met mij. <En>{ORGANISATION} ja toch de angst voor de bijwerkingen
+In 2008 kwam ik bij dokter <Dekstra>{NAME} en die begon over op gegeven moment over biologicals en dat ik daar wellecht wellicht voor in aanmerking zou komen. Ja na wat informatie te hebben gekregen ingewonnen durfde ik het eigenlijk niet aan. <Omdat>{ORGANISATION} ja ik het ging eigenlijk best goed vond ik relatief gezien met mij. <En>{ORGANISATION} ja toch de angst voor de bijwerkingen
 mensen mobieler. <Dus>{ORGANISATION} het aantal rolstoelen in onze wachtkamer is drastisch gedaald door het gebruik van anti TNF in combinatie met methotrexaat. <Maar>{ORGANISATION} eigenlijk zijn wij gewend om om ook de biologicals hè dus die nieuwere middelen vaak te combineren met methotrexaat. <Bij>{ORGANISATION} u is dat niet gebeurd. Hè en maar u heeft al methotrexaat gebruikt in het verleden.
 <Ja>{ORGANISATION}. <Jaren>{ORGANISATION} lang.
 <Ja>{ORGANISATION}. <En>{ORGANISATION} daar bent u ook mee gestopt vanwege de bijwerkingen hè? <Kan>{ORGANISATION} u daar iets over zeggen waar waar had u last van?
@@ -47,7 +47,7 @@ te beginnen. <En>{ORGANISATION} ik was toch een ja dag of anderhalf niet niet ni
 <En>{ORGANISATION} tot nog toe vind ik de voordelen van het stoppen groter als als het gebruik.
 <Ja>{ORGANISATION}. <En>{ORGANISATION} nu is uw haar weer mooi vol geworden toch?
 <Nou>{ORGANISATION} ja het in ieder geval heel erg verbeterd.
-<Ja>{ORGANISATION}. <Nou>{PERSON} heeft u vorige week heeft u de rituximab weer gekregen via het infuus. Is dat goed gegaan?
+<Ja>{ORGANISATION}. <Nou>{NAME} heeft u vorige week heeft u de rituximab weer gekregen via het infuus. Is dat goed gegaan?
 Is goed gegaan. <Ik>{ORGANISATION} vraag wel of dat het een beetje langzaam kan.
 <Ja>{ORGANISATION}?
 <Dan>{ORGANISATION} heb ik zelf 't idee dat ik
@@ -64,7 +64,7 @@ er minder last van heb.
 <Nee>{ORGANISATION}.
 <Ja>{ORGANISATION}.
 <De>{ORGANISATION} medicatie die ik gebruik dat is mira en dat dat injecteer ik eens in de 2 weken in m'n buik.
-<Mijn>{PERSON} kwaliteit van leven is ja is toch behoorlijk behoorlijk verbeterd ondanks dat ik dacht dat ik ja dat ik dat mijn kwaliteit eigenlijk al tamelijk goed was. <Waardoor>{ORGANISATION} ik vond dat ik er niet aan hoefde te beginnen. <Ja>{ORGANISATION} heeft het me toch ontzettend verrast wat het teweeg heeft gebracht. <Ik>{ORGANISATION} ja ik heb anders werd ik 's nachts vaak wakker van de pijn in m'n rug m'n nek en als ik terugdenk van toen ik startte en de maanden daarna dan ja ik sliep beter. <Ja>{ORGANISATION} waardoor ik me gewoon fitter voelde. <Begon>{ORGANISATION} daardoor ook meer
+<Mijn>{NAME} kwaliteit van leven is ja is toch behoorlijk behoorlijk verbeterd ondanks dat ik dacht dat ik ja dat ik dat mijn kwaliteit eigenlijk al tamelijk goed was. <Waardoor>{ORGANISATION} ik vond dat ik er niet aan hoefde te beginnen. <Ja>{ORGANISATION} heeft het me toch ontzettend verrast wat het teweeg heeft gebracht. <Ik>{ORGANISATION} ja ik heb anders werd ik 's nachts vaak wakker van de pijn in m'n rug m'n nek en als ik terugdenk van toen ik startte en de maanden daarna dan ja ik sliep beter. <Ja>{ORGANISATION} waardoor ik me gewoon fitter voelde. <Begon>{ORGANISATION} daardoor ook meer
 te bewegen. Bewegen ging makkelijker. Ja en doordat je makkelijker gaat ga je graag bewegen dus ja ik ging weer heel veel sporten. <Voetballen>{ORGANISATION} en fitness fietsen tennis. <En>{ORGANISATION} was echt super.
 Wat er verbeterd zou kunnen worden in de behandeling van reuma in de eerste en tweede lijn met respect tot biologicals is het belangrijkste denk dat de biologicals nu door de ziekenhuisapotheek worden afgegeven en dus de eigen huisapotheek vaak niet op de hoogte is dat de patient ook een biological gebruikt. <Dat>{ORGANISATION} levert natuurlijk bij alle partijen verwarring op. <De>{ORGANISATION} huisarts krijgt van
 ons een brief maar dat duurt natuurlijk soms wel even. <Dus>{ORGANISATION} dus soms is er verwarring of iemand nou wel of niet een biological gebruikt. <Wat>{ORGANISATION} voor de behandeling in de eerste lijn natuurlijk lastig is als je dat niet van op de hoogte bent. daarnaast met de conventionele middelen merken we regelmatig verwarring over het gebruik van methotrexaat plus een <NSHID>{ORGANISATION}. <Veel>{ORGANISATION} apothekers zijn daar huiverig voor voor die combinatie. <Vanuit>{ORGANISATION} ons oogpunt als arts zien we daar geen problemen mee. <Sterker>{ORGANISATION} nog in 't begin van behandeling is dat heel belangrijk
@@ -72,4 +72,4 @@ dat mensen ook 'n <NSHID>{ORGANISATION} krijgen maar ook dat levert verwarring o
 dat een grote toegevoegde waarde is. <Bij>{ORGANISATION} de biologicals die op de dagbehandeling in het ziekenhuis gegeven worden is de apotheker natuurlijk essentieel in in bereiding van van deze medicatie.
 <Ik>{ORGANISATION} heb ooit ook zonder medicijnen geprobeerd omdat ik met een onderzoek mee zou doen en dat was een hel. Ik kon ik kon niks meer en ik had vreselijke pijn. <Dus>{ORGANISATION} ik weet ook dat het niet anders kan.
 <Maar>{ORGANISATION} ja ik merk wel dat 't heen en weer kan gaan en dat ja. <De>{ORGANISATION} angst is er toch nog wel steeds. <Zeker>{ORGANISATION} wanneer nu die leverwaardes verhoogd
-zijn en d'r is nog niet echt een een goeie aanwijzing nog niet echt kunnen constateren wat er nou de oorzaak is. <Dat>{PERSON} maakt me toch wel een beetje bang soms.
+zijn en d'r is nog niet echt een een goeie aanwijzing nog niet echt kunnen constateren wat er nou de oorzaak is. <Dat>{NAME} maakt me toch wel een beetje bang soms.

@@ -2,13 +2,13 @@
 <Ja>{ORGANISATION}. <Dat>{ORGANISATION} klopt. <Toen>{ORGANISATION} ik bijvoorbeeld de achterklep van de auto wilde dichtdoen en die net ietsje te hoog voor me was waardoor ik ook m'n evenwicht verloor en achterover viel op straat. Hè op de parkeerplaats. <En>{ORGANISATION} dat was ook akelig want die auto's die kwamen
 daar natuurlijk allemaal uit. <En>{ORGANISATION} gelukkig zag een meneer mij liggen. <Dus>{ORGANISATION} die sprong uit de auto en rende naar me toe om me overeind te krijgen.
 <Ja>{ORGANISATION}.
-<Vuilniszakken>{ORGANISATION} wegbrengen. <En>{PERSON} met zak en al omvallen.
+<Vuilniszakken>{ORGANISATION} wegbrengen. <En>{NAME} met zak en al omvallen.
 <Jeetje>{ORGANISATION}. <En>{ORGANISATION} doet u ook aan aan sporten bij de fysio?
 <Ik>{ORGANISATION} doe niet aan sport. <Ik>{ORGANISATION} doe m'n eigen oefeningen.
 <Ja>{ORGANISATION}.
 <Necrotiserende>{ORGANISATION} myositis. <En>{ORGANISATION} ik doe mee met de ochtendgymnastiek op
 televisie. <Dat>{ORGANISATION} doe ik wel.
-<Ja>{ORGANISATION}. <Met>{PERSON} <Nederland>{ORGANISATION} beweegt?
+<Ja>{ORGANISATION}. <Met>{NAME} <Nederland>{ORGANISATION} beweegt?
 <Nederland>{ORGANISATION} beweegt.
 <Okee>{ORGANISATION}. <En>{ORGANISATION} merkt u dat het met de spieren goed gaat of gaat dat achteruit?
 <Nee>{ORGANISATION} dat gaat achteruit.
@@ -19,18 +19,18 @@ televisie. <Dat>{ORGANISATION} doe ik wel.
 <Ja>{ORGANISATION}.
 <Dat>{ORGANISATION} de cholesterolverlagers daar ook mee kunnen helpen.
 <Ja>{ORGANISATION}.
-<Dat>{PERSON} 't achteruitgaat.
+<Dat>{NAME} 't achteruitgaat.
 <En>{ORGANISATION} hoe gaat het met eten?
 <Ik>{ORGANISATION} probeer 1200 calorieën ofzo.
 Waarom doet u dat?
 <Omdat>{ORGANISATION} ik omdat ik moet afvallen.
 <Van>{ORGANISATION} wie?
-<Van>{PERSON} mijzelf om te proberen van de van de medicijnen af te komen.
+<Van>{NAME} mijzelf om te proberen van de van de medicijnen af te komen.
 <Okee>{ORGANISATION} okee.
 Dus en ik ben natuurlijk ook aan 't krimpen door de ouderdom.
 <Ja>{ORGANISATION}.
 <Dus>{ORGANISATION} ik wil alles doen om te proberen
-dat goed op de rit te houden. <En>{ORGANISATION} het werkt ook wel. <En>{PERSON} met metformine val ik ook af want er is ook diabetes door de pr prednison van een tijd geleden. <Dat>{ORGANISATION} is nooit meer helemaal goed gekomen. <Enfin>{ORGANISATION} dus d'r is een hele reeks van kwalen die dus dus zorgen dat je ook kan aankomen in plaats van afvallen.
+dat goed op de rit te houden. <En>{ORGANISATION} het werkt ook wel. <En>{NAME} met metformine val ik ook af want er is ook diabetes door de pr prednison van een tijd geleden. <Dat>{ORGANISATION} is nooit meer helemaal goed gekomen. <Enfin>{ORGANISATION} dus d'r is een hele reeks van kwalen die dus dus zorgen dat je ook kan aankomen in plaats van afvallen.
 <Het>{ORGANISATION} is eigenlijk is het makkelijk te organiseren om om valpreventie te te gaan doen. Je moet 't met samen met een paar mensen doen onder andere die zich specialiseren in bewegen zoals de fysio en mensen die zich verdiepen in kwetsbare ouders dus de <POH>{ORGANISATION} ouderenzorg bij de
 huisarts en dan langzaam kun je je netwerk uitbreiden als je meer expertise nodig hebt. <Maar>{ORGANISATION} daar ja als je klein begint heb je gewoon een paar mensen nodig zou ik daar beginnen. U bent gewoon gevallen. U bent ook wel eens duizelig.
 <Ja>{ORGANISATION}.
@@ -56,12 +56,12 @@ thuis blijven met met uw man.
 <Ja>{ORGANISATION}. <Heeft>{ORGANISATION} u wel eens wat ge gebroken?
 <Nooit>{ORGANISATION}.
 <Nooit>{ORGANISATION}. <Mooi>{ORGANISATION}. <Gebruikt>{ORGANISATION} u zelf ook nog medicatie anders dan wat u van ons krijgt?
-<Vitamine>{PERSON} <D>{ORGANISATION}.
+<Vitamine>{NAME} <D>{ORGANISATION}.
 <Ja>{ORGANISATION}.
 <Omdat>{ORGANISATION} wij allebei vitamine D tekort hadden. <En>{ORGANISATION} nou dat is het nu.
 <En>{ORGANISATION} tegen de pijn?
 <Nee>{ORGANISATION}.
-<Okee>{ORGANISATION}. <Ik>{ORGANISATION} ik ga dit straks even bij <Liesbeth>{PERSON} inleveren.
+<Okee>{ORGANISATION}. <Ik>{ORGANISATION} ik ga dit straks even bij <Liesbeth>{NAME} inleveren.
 Is goed.
 <Dan>{ORGANISATION} gaat zij denk ik contact met u opnemen om nog wat vragen door te nemen.
 <Ja>{ORGANISATION}.
@@ -70,9 +70,9 @@ opvragen.
 <Ja>{ORGANISATION}?
 <Bloeddruk>{ORGANISATION} enzo. <En>{ORGANISATION} dan gaan we nog een keer alle medicatie goed doornemen.
 <Ja>{ORGANISATION}.
-<En>{ORGANISATION} dan misschien is 't ook leuk om weer gewoon samen met dokter <Mus>{PERSON} een afspraak te maken.
+<En>{ORGANISATION} dan misschien is 't ook leuk om weer gewoon samen met dokter <Mus>{NAME} een afspraak te maken.
 <Ja>{ORGANISATION}.
 Dat we er toch weer opnieuw naar kijken.
 <Want>{ORGANISATION} ik wil echt goed huiswerk maken want ik ben toch weer een paar dingen tegengekomen waarvan ik dacht oh daar moet ik echt even over vragen.
-<Okee>{ORGANISATION}. Ik heb net mevrouw <Cameron>{PERSON} gesproken en wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. <Kan>{ORGANISATION} een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. <En>{ORGANISATION} het is heel belangrijk dat
-daar thuis wordt gekeken of d'r redenen zijn waarom ze kan vallen dus ik denk dat er meerdere mensen aan de slag moeten om het probleem van mevrouw <Cameron>{PERSON} op te lossen.
+<Okee>{ORGANISATION}. Ik heb net mevrouw <Cameron>{NAME} gesproken en wat bij haar het vallen veroorzaakt is in ieder geval niet helemaal duidelijk maar 't zijn wel meerdere factoren. <Kan>{ORGANISATION} een gedeelte zijn in de medicatie maar 't kan ook zijn dat ze omdat ze af wil vallen spierkracht verliest dus ik denk dat krachttraining bij de fysiotherapeut heel belangrijk is. <En>{ORGANISATION} het is heel belangrijk dat
+daar thuis wordt gekeken of d'r redenen zijn waarom ze kan vallen dus ik denk dat er meerdere mensen aan de slag moeten om het probleem van mevrouw <Cameron>{NAME} op te lossen.
