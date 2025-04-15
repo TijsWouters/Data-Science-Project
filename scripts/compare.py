@@ -104,7 +104,17 @@ def diff_context(s1, s2, context=3):
         print("String 2 context: ...", context_str2, "...")
         print("-" * 40)
 
-def compute_results(annotations):    
+def strict_match(a, b):
+    return a == b
+
+def pos_match(a, b):
+    return a.start == b.start and a.end == b.end
+
+def larger_match(a, b):
+    return a.start <= b.start and a.end >= b.end
+
+
+def compute_results(annotations, compare_function=strict_match):    
     results = {}
     
     file_names = os.listdir(labeled_folder + "/truth")
@@ -122,12 +132,22 @@ def compute_results(annotations):
             method_annotations = annotations[file_name][method]
             
             for truth_annotation in truth_annotations:
-                if truth_annotation in method_annotations:
-                    results[method]['TP'] += 1
-                else:
+                matched = False
+                for method_annotation in method_annotations:
+                    if compare_function(truth_annotation, method_annotation):
+                        matched = True
+                        results[method]['TP'] += 1
+                        break
+                if not matched:
                     results[method]['FN'] += 1
+
             for method_annotation in method_annotations:
-                if method_annotation not in truth_annotations:
+                matched = False
+                for truth_annotation in truth_annotations:
+                    if compare_function(truth_annotation, method_annotation):
+                        matched = True
+                        break
+                if not matched:
                     results[method]['FP'] += 1
             
     return results
@@ -145,7 +165,7 @@ def print_tabulated_results(results):
         tabulated_results.append([method, result['TP'], result['FP'], result['FN'], precision, recall, f1_score]) 
     print(tabulate(tabulated_results, headers=headers, tablefmt="github"))   
         
-    
+
 
 if __name__ == "__main__":
     # usage python compare.py <labeled_folder>
@@ -159,5 +179,13 @@ if __name__ == "__main__":
         sys.exit(1)
     annotations = get_annotations_for_methods(labeled_folder)
     results = compute_results(annotations)
+    print("Strict match results:")    
+    print_tabulated_results(results)
     
+    print("POS match results:")
+    results = compute_results(annotations, pos_match)
+    print_tabulated_results(results)
+    
+    print("Larger match results:")
+    results = compute_results(annotations, larger_match)
     print_tabulated_results(results)
