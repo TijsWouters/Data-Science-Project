@@ -1,4 +1,5 @@
-# Strict match
+# All conversation
+## Strict match
 Label, start and end match
 
 | Method     |   TP |   FP |   FN |   Precision |   Recall |        F1 |
@@ -10,7 +11,7 @@ Label, start and end match
 | stanza     |   23 |  117 |   57 |   0.164286  |   0.2875 | 0.209091  |
 | truth      |   80 |    0 |    0 |   1         |   1      | 1         |
 
-# Position match
+## Position match
 Start and end match
 
 | Method     |   TP |   FP |   FN |   Precision |   Recall |        F1 |
@@ -22,7 +23,7 @@ Start and end match
 | stanza     |   31 |  109 |   49 |   0.221429  |   0.3875 | 0.281818  |
 | truth      |   80 |    0 |    0 |   1         |   1      | 1         |
 
-# Larger than match
+## Larger than match
 Method start <= truth start and method end >= truth end
 
 | Method     |   TP |   FP |   FN |   Precision |   Recall |        F1 |
@@ -33,3 +34,40 @@ Method start <= truth start and method end >= truth end
 | spacy      |   60 |  223 |   20 |   0.212014  |   0.75   | 0.330579  |
 | stanza     |   40 |  100 |   40 |   0.285714  |   0.5    | 0.363636  |
 | truth      |   80 |    0 |    0 |   1         |   1      | 1         |
+
+# Excluding non docter-patient conversations
+## Strict match
+Label, start and end match
+
+| Method     |   TP |   FP |   FN |   Precision |   Recall |        F1 |
+|------------|------|------|------|-------------|----------|-----------|
+| deduce     |   15 |   15 |   43 |   0.5       | 0.258621 | 0.340909  |
+| deidentify |   40 |   10 |   18 |   0.8       | 0.689655 | 0.740741  |
+| nltk       |   11 |  718 |   47 |   0.0150892 | 0.189655 | 0.0279543 |
+| spacy      |   30 |  120 |   28 |   0.2       | 0.517241 | 0.288462  |
+| stanza     |   18 |   34 |   40 |   0.346154  | 0.310345 | 0.327273  |
+| truth      |   58 |    0 |    0 |   1         | 1        | 1         |
+
+## Position match
+Start and end match
+
+| Method     |   TP |   FP |   FN |   Precision |   Recall |        F1 |
+|------------|------|------|------|-------------|----------|-----------|
+| deduce     |   15 |   15 |   43 |   0.5       | 0.258621 | 0.340909  |
+| deidentify |   40 |   10 |   18 |   0.8       | 0.689655 | 0.740741  |
+| nltk       |   19 |  710 |   39 |   0.0260631 | 0.327586 | 0.0482846 |
+| spacy      |   42 |  108 |   16 |   0.28      | 0.724138 | 0.403846  |
+| stanza     |   21 |   31 |   37 |   0.403846  | 0.362069 | 0.381818  |
+| truth      |   58 |    0 |    0 |   1         | 1        | 1         |
+
+## Larger than match
+Method start <= truth start and method end >= truth end
+
+| Method     |   TP |   FP |   FN |   Precision |   Recall |        F1 |
+|------------|------|------|------|-------------|----------|-----------|
+| deduce     |   17 |   13 |   41 |   0.566667  | 0.293103 | 0.386364  |
+| deidentify |   41 |    9 |   17 |   0.82      | 0.706897 | 0.759259  |
+| nltk       |   19 |  710 |   39 |   0.0260631 | 0.327586 | 0.0482846 |
+| spacy      |   44 |  106 |   14 |   0.293333  | 0.758621 | 0.423077  |
+| stanza     |   22 |   30 |   36 |   0.423077  | 0.37931  | 0.4       |
+| truth      |   58 |    0 |    0 |   1         | 1        | 1         |

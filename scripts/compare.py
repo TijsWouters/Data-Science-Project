@@ -128,6 +128,8 @@ def compute_results(annotations, compare_function=strict_match):
         }
         
         for file_name in file_names:
+            if (file_name in ["KNMP2013def-QuickTime.txt", "KNMP2014-2-def2MP4.txt", "KNMP2015-farmagenetica.txt"]):
+                continue
             truth_annotations = annotations[file_name]['truth']
             method_annotations = annotations[file_name][method]
             
