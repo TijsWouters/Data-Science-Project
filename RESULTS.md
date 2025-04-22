@@ -37,7 +37,7 @@ Method start <= truth start and method end >= truth end
 | stanza     |   43 |   97 |   37 |   0.307143  |   0.5375 | 0.390909  |
 | truth      |   80 |    0 |    0 |   1         |   1      | 1         |
 
-# Excluding non docter-patient conversations
+# Excluding non doctor-patient conversations
 ## Strict match
 Label, start and end match
 
