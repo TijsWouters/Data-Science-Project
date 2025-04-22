@@ -33,9 +33,6 @@ def process_file(file_path):
     
     print("Extracted tags:")
     print(tabulate(results, headers=["Word", "Label", "Start", "End"], tablefmt="grid"))
-        
-    print("Cleaned text:")
-    print(cleaned_text)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

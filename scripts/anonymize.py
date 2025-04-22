@@ -9,6 +9,9 @@ class Annotation:
         self.start = start
         self.end = end
         
+    def __str__(self):
+        return f"<{self.text}>{{{self.tag}}} [{self.start}:{self.end}]"    
+    
     def __eq__(self, value):
         return isinstance(value, Annotation) and self.text == value.text and self.tag == value.tag and self.start == value.start and self.end == value.end
 

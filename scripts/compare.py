@@ -126,10 +126,12 @@ def compute_results(annotations, compare_function=strict_match):
             'FP': 0,
             'FN': 0,
         }
-        
+        if method != "deidentify":
+            continue
         for file_name in file_names:
             if (file_name in ["KNMP2013def-QuickTime.txt", "KNMP2014-2-def2MP4.txt", "KNMP2015-farmagenetica.txt"]):
                 continue
+            #print(f"\nProcessing {file_name} for method {method}\n")
             truth_annotations = annotations[file_name]['truth']
             method_annotations = annotations[file_name][method]
             
@@ -141,6 +143,7 @@ def compute_results(annotations, compare_function=strict_match):
                         results[method]['TP'] += 1
                         break
                 if not matched:
+                    print(f"False negative: {truth_annotation} in {file_name} for method {method}")
                     results[method]['FN'] += 1
 
             for method_annotation in method_annotations:
@@ -150,6 +153,7 @@ def compute_results(annotations, compare_function=strict_match):
                         matched = True
                         break
                 if not matched:
+                    print(f"False positive: {method_annotation} in {file_name} for method {method}")
                     results[method]['FP'] += 1
             
     return results
