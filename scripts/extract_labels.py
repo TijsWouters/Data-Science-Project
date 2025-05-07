@@ -17,13 +17,19 @@ def parse_tags(text):
         word = match.group(1)
         label = match.group(2)
         adjusted_end = adjusted_start + len(word)
-        results.append((word, label, adjusted_start, adjusted_end))
+        results.append((word, label, adjusted_start, adjusted_end, None))
 
         removed_length = (orig_end - orig_start) - len(word)
         cumulative_offset += removed_length
         return word
 
     cleaned_text = pattern.sub(repl, text)
+    
+    for i, result in enumerate(results):
+        word, label, start, end, _ = result
+        word_index = len(cleaned_text[:start].split())
+        results[i] = (word, label, start, end, word_index)
+    
     return results, cleaned_text
 
 def process_file(file_path):
@@ -32,7 +38,7 @@ def process_file(file_path):
     results, cleaned_text = parse_tags(text)
     
     print("Extracted tags:")
-    print(tabulate(results, headers=["Word", "Label", "Start", "End"], tablefmt="grid"))
+    print(tabulate(results, headers=["Word", "Label", "Start", "End", "Index"], tablefmt="grid"))
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

@@ -8,6 +8,7 @@ class Annotation:
         self.tag = tag
         self.start = start
         self.end = end
+        self.index = None
         
     def __str__(self):
         return f"<{self.text}>{{{self.tag}}} [{self.start}:{self.end}]"    
