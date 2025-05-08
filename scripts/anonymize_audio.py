@@ -4,6 +4,11 @@ from extract_labels import parse_tags
 import re, unicodedata
 from num2words import num2words
 
+from pydub import AudioSegment, effects
+from pathlib import Path
+
+
+
 AUDIO  = "../data/audio/he-knmp-2018.wav"                    # 16-kHz mono is ideal
 
 with open("../data/labeled/truth/he-knmp-2018.txt", encoding="utf-8") as f:
@@ -21,6 +26,16 @@ aligner    = bundle.get_aligner()
 
 wave, sr   = torchaudio.load(AUDIO)
 assert sr == bundle.sample_rate             # MMS models expect 16 kHz
+
+clips = {}
+for f in Path("../audio_snippets").glob("*.mp3"):
+    clips[f.stem] = (
+        AudioSegment.from_file(f)
+        .set_frame_rate(sr)       # resample to match main file
+        .set_channels(1)
+    )
+
+print(clips.keys())
 
 # minimal Dutch normalisation – trailing punctuation, case, diacritics
 norm = lambda w: re.sub("[^a-z']", "", w.lower())
@@ -50,9 +65,8 @@ for raw_word, span in zip(WORDS, spans):
 from pydub import AudioSegment
 from pydub.generators import Sine
 
-AUDIO_IN   = "../data/audio/he-knmp-2018.wav"
-AUDIO_OUT  = "audio_beeped.wav"
-beep_ids   = [t[4] for t in tags]  # only beeped words
+AUDIO_IN = "../data/audio/he-knmp-2018.wav"
+AUDIO_OUT = "audio_beeped.wav"
 
 # ----------------------------------------------------------------------
 # 1) load the audio (pydub works in milliseconds)
@@ -61,13 +75,15 @@ sr   = orig.frame_rate               # keep the original sample-rate
 
 # 2) for every index → build & overlay a beep segment
 tone  = Sine(1000, sample_rate=sr)   # 1 kHz, matches speech band
-for i in sorted(beep_ids, reverse=True):
-    t0_ms = int(word_times[i]["start"] * 1000)
-    t1_ms = int(word_times[i]["end"]   * 1000)
-    dur   = 400
+for tag in sorted(tags, key=lambda tag: tag[4], reverse=True):
+    cat      = tag[1].lower()
+    repl_src = clips[cat]
+    
+    t0_ms = int(word_times[tag[4]]["start"] * 1000)
+    
+    t1_ms = int(word_times[tag[4] + tag[5] - 1]["end"]   * 1000)
 
-    beep  = tone.to_audio_segment(duration=dur).apply_gain(-3)  # –3 dB
-    orig = orig[:t0_ms] + beep + orig[t1_ms:]
+    orig = orig[:t0_ms] + repl_src + orig[t1_ms:]
 
 # 3) export; pydub chooses codec by extension
 orig.export(AUDIO_OUT, format="wav")

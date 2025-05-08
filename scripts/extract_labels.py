@@ -17,7 +17,8 @@ def parse_tags(text):
         word = match.group(1)
         label = match.group(2)
         adjusted_end = adjusted_start + len(word)
-        results.append((word, label, adjusted_start, adjusted_end, None))
+        length = len(word.split())
+        results.append((word, label, adjusted_start, adjusted_end, None, length))
 
         removed_length = (orig_end - orig_start) - len(word)
         cumulative_offset += removed_length
@@ -26,9 +27,9 @@ def parse_tags(text):
     cleaned_text = pattern.sub(repl, text)
     
     for i, result in enumerate(results):
-        word, label, start, end, _ = result
+        word, label, start, end, _, length = result
         word_index = len(cleaned_text[:start].split())
-        results[i] = (word, label, start, end, word_index)
+        results[i] = (word, label, start, end, word_index, length)
     
     return results, cleaned_text
 
