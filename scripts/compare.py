@@ -43,6 +43,7 @@ def get_annotations_for_methods(labeled_folder):
         annotations[file_name] = {}
         
         for method in methods:
+            if method == "nltk": continue
             annotations[file_name][method], cleaned_text = annotations_from_file(labeled_folder + "/" + method + "/" + file_name)
             if prev_cleaned_text is not None and cleaned_text != prev_cleaned_text:
                 diff_context(prev_cleaned_text, cleaned_text)
@@ -69,7 +70,6 @@ def diff_context(s1, s2, context=3):
     """
     # Check if strings are identical
     if s1 == s2:
-        print("The strings are identical.")
         return
 
     # Split the strings into words
@@ -121,13 +121,13 @@ def compute_results(annotations, compare_function=strict_match):
     methods = os.listdir(labeled_folder)
     
     for method in methods:
+        if method != "deidentify":
+            continue
         results[method] = {
             'TP': 0,
             'FP': 0,
             'FN': 0,
         }
-        if method != "deidentify":
-            continue
         for file_name in file_names:
             if (file_name in ["KNMP2013def-QuickTime.txt", "KNMP2014-2-def2MP4.txt", "KNMP2015-farmagenetica.txt"]):
                 continue

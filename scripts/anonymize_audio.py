@@ -7,51 +7,48 @@ from num2words import num2words
 from pydub import AudioSegment, effects
 from pathlib import Path
 
-
-
-AUDIO  = "../data/audio/he-knmp-2018.wav"                    # 16-kHz mono is ideal
+AUDIO  = "../data/audio/he-knmp-2018.wav"                   
 
 with open("../data/labeled/truth/he-knmp-2018.txt", encoding="utf-8") as f:
     tags, transcript = parse_tags(f.read())
     WORDS = transcript.split()  
-    WORDS = [w.replace(".", "") for w in WORDS]  # remove trailing dot
-    WORDS = [num2words(w, lang="nl") if w.isdigit() else w for w in WORDS]  # convert digits to words
+    WORDS = [w.replace(".", "") for w in WORDS] 
+    WORDS = [num2words(w, lang="nl") if w.isdigit() else w for w in WORDS]  
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-bundle     = torchaudio.pipelines.MMS_FA     # multilingual model incl. Dutch
+bundle     = torchaudio.pipelines.MMS_FA   
 model      = bundle.get_model().to(DEVICE)
 tokenizer  = bundle.get_tokenizer()
 aligner    = bundle.get_aligner()
 
 wave, sr   = torchaudio.load(AUDIO)
-assert sr == bundle.sample_rate             # MMS models expect 16 kHz
+assert sr == bundle.sample_rate            
 
 clips = {}
 for f in Path("../audio_snippets").glob("*.mp3"):
     clips[f.stem] = (
         AudioSegment.from_file(f)
-        .set_frame_rate(sr)       # resample to match main file
+        .set_frame_rate(sr)      
         .set_channels(1)
     )
 
 print(clips.keys())
 
-# minimal Dutch normalisation – trailing punctuation, case, diacritics
 norm = lambda w: re.sub("[^a-z']", "", w.lower())
 transcript = [norm(w) for w in WORDS]
 
 with torch.inference_mode():
-    emission, _ = model(wave.to(DEVICE))    # (B, T, vocab)
+    emission, _ = model(wave.to(DEVICE))   
     spans       = aligner(emission[0],
                           tokenizer(transcript))
 
-audio_len_sec  = wave.shape[1] / sr           # total seconds
+audio_len_sec  = wave.shape[1] / sr         
 seconds_per_fr = audio_len_sec / emission.shape[1]
 
 word_times = []
 for raw_word, span in zip(WORDS, spans):
-    if not span:                             # ← empty alignment
+    if not span:                            
         start = 0
         end   = 0
         word_times.append({"word": raw_word, "start": start, "end": end})
