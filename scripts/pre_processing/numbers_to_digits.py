@@ -37,7 +37,7 @@ def parse_tens(s: str) -> int:
         return 0
     if s in numwords:
         return numwords[s]
-    # Look for pattern: unit + "en" + tens (e.g., "vijfenvijftig" -> 5 + 50)
+
     for unit in ["een", "twee", "drie", "vier", "vijf", "zes", "zeven", "acht", "negen"]:
         prefix = unit + "en"
         if s.startswith(prefix):
@@ -53,7 +53,7 @@ def parse_hundred(s: str) -> int:
     if idx != -1:
         hundreds_part = s[:idx]
         rest = s[idx+len("honderd"):]
-        # If nothing appears before "honderd", it means 1 hundred.
+
         if hundreds_part == "":
             hundreds = 1
         else:
@@ -64,7 +64,6 @@ def parse_hundred(s: str) -> int:
         return parse_tens(s)
 
 def parse_number(text: str) -> int:
-    # Preprocessing: lowercase and remove spaces and hyphens and ë
     s = text.lower().replace(" ", "").replace("-", "").replace("ã«", "e")
     if s.startswith("twee"):
         print(s)
@@ -74,12 +73,12 @@ def parse_number(text: str) -> int:
         raise ValueError("Input string is empty")
     if s == "nul":
         return 0
-    # Check for "duizend" (thousands)
+
     idx = s.find("duizend")
     if idx != -1:
         thousands_part = s[:idx]
         rest = s[idx+len("duizend"):]
-        # If no number precedes "duizend", it is implicitly 1 thousand.
+
         if thousands_part == "":
             thousands = 1
         else:
@@ -91,14 +90,11 @@ def parse_number(text: str) -> int:
     return number
 
 def numbers_to_digits(text):        
-    # Change numbers to digit for each sentence
     sentences = text.split("\n")
     for i, sentence in enumerate(sentences):
         words = sentence.split(" ")
         for j, word in enumerate(words):
-            # Remove punctuation from beginning and end of the token
             clean_word = word.strip(string.punctuation)
-            # Save any trailing punctuation
             prefix = word[:len(word) - len(word.lstrip(string.punctuation))]
             suffix = word[len(clean_word) + len(prefix):]
             try:            

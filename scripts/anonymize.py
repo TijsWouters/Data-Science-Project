@@ -1,6 +1,6 @@
 import os
 import sys
-from tagmapping import *
+from scripts.labelmapping import *
 
 class Annotation:
     def __init__(self, text, tag, start, end):
@@ -44,7 +44,6 @@ class Annotation:
     
     @staticmethod
     def fromStanza(annotation):
-        # Ensure that STANZA_TAG_MAPPING is defined in your tagmapping module.
         mapped_tag = STANZA_TAG_MAPPING[annotation.type]
         return Annotation(annotation.text, mapped_tag, annotation.start_char, annotation.end_char)
 
@@ -192,7 +191,6 @@ if __name__ == "__main__":
         from deidentify.base import Document as DeidentifyDocument
         from deidentify.tokenizer import TokenizerFactory
         from deidentify.taggers import FlairTagger
-        from deidentify.util import mask_annotations
         model = 'model_bilstmcrf_ons_fast-v0.2.0'
         tokenizer = TokenizerFactory().tokenizer(corpus='ons', disable=("tagger", "ner"))
         tagger = FlairTagger(model=model, tokenizer=tokenizer, verbose=False)

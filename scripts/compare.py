@@ -3,7 +3,7 @@ import os
 
 from anonymize import Annotation
 from extract_labels import parse_tags
-from tagmapping import VALID_TAGS
+from scripts.labelmapping import VALID_TAGS
 
 def annotations_from_file(file_name):
     with open(file_name, 'r') as f:
@@ -59,46 +59,30 @@ def get_annotations_for_methods(labeled_folder):
             
 import difflib
 
+# Check if strings are equal, if not print the context around the difference
 def diff_context(s1, s2, context=3):
-    """
-    Compare two strings and print a context snippet around the differences.
-
-    Parameters:
-        s1 (str): The first string.
-        s2 (str): The second string.
-        context (int): Number of context words to show around each difference (default is 3).
-    """
-    # Check if strings are identical
     if s1 == s2:
         return
 
-    # Split the strings into words
     words1 = s1.split()
     words2 = s2.split()
     
-    # Create a SequenceMatcher object to compare the word lists
     sm = difflib.SequenceMatcher(None, words1, words2)
     opcodes = sm.get_opcodes()
 
-    # Process the differences as reported by get_opcodes
     for tag, i1, i2, j1, j2 in opcodes:
-        # We only care about non-equal segments.
         if tag == "equal":
             continue
         
-        # Get a few words of context before and after the difference in both strings.
-        # For string 1:
         start1 = max(i1 - context, 0)
         end1 = min(i2 + context, len(words1))
-        # For string 2:
+
         start2 = max(j1 - context, 0)
         end2 = min(j2 + context, len(words2))
         
-        # Join the words back into a context snippet.
         context_str1 = " ".join(words1[start1:end1])
         context_str2 = " ".join(words2[start2:end2])
         
-        # Print the differences with context.
         print("Difference found:")
         print("String 1 context: ...", context_str1, "...")
         print("String 2 context: ...", context_str2, "...")
@@ -143,7 +127,7 @@ def compute_results(annotations, compare_function=strict_match):
                         results[method]['TP'] += 1
                         break
                 if not matched:
-                    print(f"False negative: {truth_annotation} in {file_name} for method {method}")
+                    #print(f"False negative: {truth_annotation} in {file_name} for method {method}")
                     results[method]['FN'] += 1
 
             for method_annotation in method_annotations:
@@ -153,7 +137,7 @@ def compute_results(annotations, compare_function=strict_match):
                         matched = True
                         break
                 if not matched:
-                    print(f"False positive: {method_annotation} in {file_name} for method {method}")
+                    #print(f"False positive: {method_annotation} in {file_name} for method {method}")
                     results[method]['FP'] += 1
             
     return results

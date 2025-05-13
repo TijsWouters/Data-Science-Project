@@ -1,15 +1,24 @@
-import torch, torchaudio, re, json
+import torch, torchaudio, re
 from extract_labels import parse_tags
 
-import re, unicodedata
+import re
 from num2words import num2words
 
-from pydub import AudioSegment, effects
+from pydub import AudioSegment
 from pathlib import Path
 
-AUDIO  = "../data/audio/he-knmp-2018.wav"                   
+import sys
 
-with open("../data/labeled/truth/he-knmp-2018.txt", encoding="utf-8") as f:
+if __name__ == "__main__":
+    if len(sys.argv) < 3 or len(sys.argv) > 4:
+        print("Usage: python anonymize_audio.py <audio_file> <labeled_file> <output_file>")
+        sys.exit(1)
+    
+    AUDIO_IN = sys.argv[1]
+    LABELED_FILE = sys.argv[2]
+    AUDIO_OUT = sys.argv[3] if len(sys.argv) == 4 else "audio_beeped.wav"                  
+
+with open(LABELED_FILE, encoding="utf-8") as f:
     tags, transcript = parse_tags(f.read())
     WORDS = transcript.split()  
     WORDS = [w.replace(".", "") for w in WORDS] 
@@ -22,7 +31,7 @@ model      = bundle.get_model().to(DEVICE)
 tokenizer  = bundle.get_tokenizer()
 aligner    = bundle.get_aligner()
 
-wave, sr   = torchaudio.load(AUDIO)
+wave, sr   = torchaudio.load(AUDIO_IN)
 assert sr == bundle.sample_rate            
 
 clips = {}
@@ -62,9 +71,6 @@ for raw_word, span in zip(WORDS, spans):
 from pydub import AudioSegment
 from pydub.generators import Sine
 
-AUDIO_IN = "../data/audio/he-knmp-2018.wav"
-AUDIO_OUT = "audio_beeped.wav"
-
 # ----------------------------------------------------------------------
 # 1) load the audio (pydub works in milliseconds)
 orig = AudioSegment.from_file(AUDIO_IN)
@@ -84,6 +90,6 @@ for tag in sorted(tags, key=lambda tag: tag[4], reverse=True):
 
 # 3) export; pydub chooses codec by extension
 orig.export(AUDIO_OUT, format="wav")
-print("✅  done →", AUDIO_OUT)
+print("Anonymized audio file can be found in: ", AUDIO_OUT)	
     
 

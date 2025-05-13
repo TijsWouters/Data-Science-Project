@@ -21,7 +21,6 @@ def remove_asterix(text):
     return re.sub(r'\*[^\s]*', '', text)
 
 
-
 if __name__ == '__main__':
     if (len(sys.argv) < 3 or len(sys.argv) > 7):
         print("Usage: python pre_process.py <input_file> <output_file> [remove_time_annotations] [numbers_to_digits] [remove_brackets] [remove_asterix]")   

@@ -1,4 +1,6 @@
 /venv
+/.venv
+__pycache__
 COM046_02-03-03.txt
 COM046_02-03-05.txt
 COM046_04-03-01.txt
