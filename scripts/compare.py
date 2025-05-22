@@ -3,7 +3,7 @@ import os
 
 from anonymize import Annotation
 from extract_labels import parse_tags
-from scripts.labelmapping import VALID_TAGS
+from labelmapping import VALID_TAGS
 
 def annotations_from_file(file_name):
     with open(file_name, 'r') as f:
@@ -105,8 +105,7 @@ def compute_results(annotations, compare_function=strict_match):
     methods = os.listdir(labeled_folder)
     
     for method in methods:
-        if method != "deidentify":
-            continue
+        if method == "nltk": continue
         results[method] = {
             'TP': 0,
             'FP': 0,

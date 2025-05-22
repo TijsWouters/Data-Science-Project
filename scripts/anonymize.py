@@ -1,6 +1,6 @@
 import os
 import sys
-from scripts.labelmapping import *
+from labelmapping import *
 
 class Annotation:
     def __init__(self, text, tag, start, end):
