@@ -10,8 +10,6 @@ Label, start and end match
 | spacy      |   42 |  241 |   38 |   0.14841   |    0.525 | 0.231405  |
 | stanza     |   26 |  114 |   54 |   0.185714  |    0.325 | 0.236364  |
 | truth      |   80 |    0 |    0 |   1         |    1     | 1         |
-| stanza     |   26 |  114 |   54 |   0.185714  |    0.325 | 0.236364  |
-| truth      |   80 |    0 |    0 |   1         |    1     | 1         |
 
 ## Position match
 Start and end match
